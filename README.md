@@ -1,4 +1,4 @@
-# Falcon ReID v0.9.4
+# Команда MLstrom
 
 Используется одна модель Vit_b. Скачать веса reid.pt https://disk.yandex.ru/d/n5t5Z6g53vs3Xw и расположить в папке ./deploy/models_current/members/base_full. 
 
