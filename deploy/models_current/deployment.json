@@ -1,0 +1,71 @@
+{
+  "schema": "vehicle-reid-v094-production-score-ensemble-v1",
+  "mode": "score_ensemble",
+  "profile": "production_base_external_convnext",
+  "fusion": "per_query_zscore",
+  "members": [
+    {
+      "name": "base_full",
+      "path": "members/base_full",
+      "weight": 0.65,
+      "source_mode": "single"
+    },
+    {
+      "name": "external_convnext_full",
+      "path": "members/external_convnext_full",
+      "weight": 0.35,
+      "source_mode": "single"
+    }
+  ],
+  "candidate_policy": {
+    "mode": "inherit_member",
+    "member": "base_full",
+    "note": "Refusal calibration belongs to base_full; score-fusion refusal was not recalibrated."
+  },
+  "embedding_policy": {
+    "mode": "weighted_concat",
+    "weights": {
+      "base_full": 0.65,
+      "external_convnext_full": 0.35
+    },
+    "note": "embeddings.npy is a real fixed-dimensional representation of both deployed feature models; final submission ranking additionally uses documented per-query score fusion/re-ranking."
+  },
+  "provenance": {
+    "base_full": {
+      "origin": "team_trained",
+      "note": "Target-task deployment built by the team; document public backbone/data sources in MODEL_PROVENANCE.md."
+    },
+    "external_convnext_full": {
+      "origin": "team_trained",
+      "url": null,
+      "version": null,
+      "sha256": null,
+      "note": "If this checkpoint was trained by another member of the same team, use team_trained. If it is a third-party public checkpoint, public URL/version/SHA256 are required by organizer Q&A."
+    }
+  },
+  "selection": {
+    "variant": "Z::base_full+external_convnext_full::0.650,0.350",
+    "shared_validation_mAP@10_mean": 0.882672769708484,
+    "source": "all_metrics_summary.csv"
+  },
+  "runtime": {
+    "feature_runtime": "pytorch_cuda",
+    "exact_ranking": true,
+    "shared_preprocess": true,
+    "weight_format": ".pt",
+    "recommended_precision": "fp16",
+    "official_throughput_batches": [
+      1,
+      8,
+      16,
+      32
+    ],
+    "target_fps": 100.0
+  },
+  "final_runtime": {
+    "feature_runtime": "pytorch_cuda",
+    "pytorch_checkpoints_in_final_package": true,
+    "onnx_artifacts_in_final_package": false,
+    "tensorrt_artifacts_in_final_package": false
+  }
+}

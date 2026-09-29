@@ -1,0 +1,12 @@
+{
+  "mode": "single",
+  "backbone": "vit_base",
+  "resolution": "384x576",
+  "selected_stage": "listwise_reranker_kreciprocal",
+  "checkpoint": "reid.pt",
+  "reranker": "reranker.pt",
+  "refusal": "refusal.json",
+  "retrieval_recipe": "retrieval_recipe.json",
+  "shared_validation_report": "runs/full_single_v094_v5exact_base/final_shared_validation/shared_validation_report.json",
+  "inference_script": "scripts/21_infer_from_csv.py"
+}

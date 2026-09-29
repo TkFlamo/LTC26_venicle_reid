@@ -1,0 +1,7642 @@
+{
+  "name": "vehicle_reid_v5_official_shared_validation",
+  "version": 1,
+  "provenance": {
+    "source_archive": "vehicle_reid_v5_official.zip",
+    "source_run_primary": "runs/v5_E1_small_camera",
+    "source_run_control": "runs/v5_E0_small_v4_control",
+    "note": "Both source runs contain byte-identical train_split.csv and val_split.csv."
+  },
+  "dataset_expectations": {
+    "total_rows": 9556,
+    "total_vehicle_ids": 1541,
+    "development_rows": 8126,
+    "development_vehicle_ids": 1310,
+    "shared_validation_rows": 1430,
+    "shared_validation_vehicle_ids": 231,
+    "shared_validation_cameras": 87
+  },
+  "fingerprints": {
+    "val_vehicle_ids_sha256": "08f3665cce6586b173f92a8baa04741ae0f313b44bb534376c16a9a705dddac2",
+    "val_image_ids_sorted_sha256": "669e01748462c8e0214834297ff95ef7bcbc596b4133eb5f2a8c135d05856cdb",
+    "val_image_ids_ordered_sha256": "e8b8566f7662706a5c4b92c28005701d9c9c0e5a0ade45847c261193ab9b5a31",
+    "dev_vehicle_ids_sha256": "dce0dc8b1b794e5a04d13fed91b4852157698e7a2a59c635f1ddb0a101be8b7c",
+    "dev_image_ids_sorted_sha256": "bdfe378a24a288507d1bfc57525ed3680e49b82c0fe61717f5c303fdfe4f4cfd",
+    "dev_image_ids_ordered_sha256": "842c177e18a9203b38dea7cc666677ede9152450589b3190c5404d97d588c368"
+  },
+  "validation_vehicle_ids": [
+    "1",
+    "1012",
+    "1015",
+    "1016",
+    "1020",
+    "1022",
+    "1024",
+    "1038",
+    "104",
+    "1040",
+    "1043",
+    "1051",
+    "1058",
+    "107",
+    "1071",
+    "1072",
+    "1075",
+    "1101",
+    "111",
+    "1111",
+    "1113",
+    "1118",
+    "112",
+    "1121",
+    "1123",
+    "1126",
+    "1127",
+    "1129",
+    "1132",
+    "1134",
+    "114",
+    "1151",
+    "1154",
+    "1155",
+    "116",
+    "1163",
+    "1164",
+    "1166",
+    "1170",
+    "1186",
+    "1190",
+    "1198",
+    "1204",
+    "1209",
+    "1234",
+    "1248",
+    "1251",
+    "1252",
+    "1271",
+    "1273",
+    "1281",
+    "1300",
+    "1301",
+    "1303",
+    "1314",
+    "1316",
+    "1319",
+    "1326",
+    "1331",
+    "1338",
+    "1358",
+    "1363",
+    "1371",
+    "1375",
+    "139",
+    "1400",
+    "1405",
+    "142",
+    "1422",
+    "1423",
+    "1438",
+    "1440",
+    "1441",
+    "1456",
+    "1464",
+    "1475",
+    "1481",
+    "1488",
+    "149",
+    "1492",
+    "1495",
+    "1520",
+    "1522",
+    "1524",
+    "1531",
+    "1539",
+    "154",
+    "169",
+    "18",
+    "187",
+    "200",
+    "201",
+    "204",
+    "207",
+    "208",
+    "210",
+    "215",
+    "217",
+    "218",
+    "221",
+    "224",
+    "225",
+    "226",
+    "235",
+    "251",
+    "256",
+    "257",
+    "26",
+    "261",
+    "267",
+    "272",
+    "281",
+    "282",
+    "285",
+    "293",
+    "31",
+    "316",
+    "325",
+    "328",
+    "329",
+    "340",
+    "348",
+    "358",
+    "363",
+    "37",
+    "375",
+    "39",
+    "403",
+    "406",
+    "421",
+    "432",
+    "458",
+    "485",
+    "511",
+    "515",
+    "526",
+    "538",
+    "54",
+    "541",
+    "546",
+    "552",
+    "559",
+    "568",
+    "574",
+    "575",
+    "58",
+    "582",
+    "587",
+    "588",
+    "599",
+    "616",
+    "624",
+    "625",
+    "630",
+    "637",
+    "638",
+    "641",
+    "642",
+    "649",
+    "655",
+    "659",
+    "664",
+    "666",
+    "67",
+    "670",
+    "671",
+    "673",
+    "685",
+    "69",
+    "692",
+    "7",
+    "706",
+    "708",
+    "710",
+    "712",
+    "715",
+    "729",
+    "73",
+    "752",
+    "756",
+    "764",
+    "771",
+    "784",
+    "787",
+    "788",
+    "79",
+    "797",
+    "8",
+    "802",
+    "813",
+    "816",
+    "828",
+    "829",
+    "837",
+    "847",
+    "848",
+    "852",
+    "859",
+    "861",
+    "875",
+    "877",
+    "885",
+    "888",
+    "890",
+    "896",
+    "9",
+    "900",
+    "906",
+    "908",
+    "912",
+    "919",
+    "923",
+    "929",
+    "930",
+    "931",
+    "932",
+    "939",
+    "94",
+    "940",
+    "945",
+    "946",
+    "95",
+    "952",
+    "957",
+    "96",
+    "966",
+    "967",
+    "968",
+    "977",
+    "995",
+    "996"
+  ],
+  "ordered_validation_rows": [
+    {
+      "image_id": "f0d68d754a8a444b8b49628b0633068c",
+      "vehicle_id": "403",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b94be87b5ced41f5868f2dfb415100e4",
+      "vehicle_id": "403",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "296ab330ff8e49dd878d922c10352ca0",
+      "vehicle_id": "403",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5b7baa07e07640449243f4619a3077cc",
+      "vehicle_id": "403",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "ee3240d083594b5dbed8d8d28c236f91",
+      "vehicle_id": "403",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "3d7fd47923ac45d39fb159ecbec21e75",
+      "vehicle_id": "403",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5b50a508e6484e1e9cad2fd2231ba7ed",
+      "vehicle_id": "94",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "6c0fa2da477842b3851e0f616da4b741",
+      "vehicle_id": "94",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "97a69fd3d3fc480d84241dd3a8075225",
+      "vehicle_id": "94",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "c0a35bfb48c544bbac3d0adaf8e43264",
+      "vehicle_id": "94",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5e9af4c38ed04ee98e566eb0c6f2abfd",
+      "vehicle_id": "94",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "85f4e22892ad4f068e6aa259992b1907",
+      "vehicle_id": "94",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b7a66b2051464dc3b66dd5fab7a5e85d",
+      "vehicle_id": "1488",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "f3e38272eef14262ac2fa4309e00bf2a",
+      "vehicle_id": "1488",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "eae857fb67b94b4ca56b2527d4a2a1a3",
+      "vehicle_id": "1488",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "d07ca749689440558e2b5de5c5317c0c",
+      "vehicle_id": "1488",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "2716594a9a7f49a586eaa548b111db5c",
+      "vehicle_id": "1488",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "05db6b22be344ad09199447a87af3895",
+      "vehicle_id": "568",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "3081ace1e9784f56afb67bde0f590cae",
+      "vehicle_id": "568",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "005653d5450545bda6a7958ad2ce5a79",
+      "vehicle_id": "568",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "4988b52510644d3ebbe1e0d7ac756261",
+      "vehicle_id": "568",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "6ee0d1473f314651a6c43118d16fb3de",
+      "vehicle_id": "568",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "a92f0696ff424b69a999092560a04345",
+      "vehicle_id": "568",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "71849c779f5f4e0c81fc0a200dadcde4",
+      "vehicle_id": "568",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "218606f3544f4957a91405de82374eb5",
+      "vehicle_id": "568",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "3b84434e154d4f419caf7fadbe6ef65b",
+      "vehicle_id": "829",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "b7bc9810bbc749e09dc8b415808c4faa",
+      "vehicle_id": "829",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "7c78587b621245138965fd2978f466c8",
+      "vehicle_id": "829",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "5dae571a1076425cbeda98af09c7ec05",
+      "vehicle_id": "829",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "5d9012ebc38244f7b86b3d23203e2fb4",
+      "vehicle_id": "829",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "9b81ed3fa8d7439489fc52dd46beee74",
+      "vehicle_id": "1101",
+      "camera_id": "93"
+    },
+    {
+      "image_id": "16f8a03513bf4494949341a3904866e0",
+      "vehicle_id": "1101",
+      "camera_id": "93"
+    },
+    {
+      "image_id": "31f5fbdedf49492dbaa97f048ff911ec",
+      "vehicle_id": "1101",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "1d83e65f848149ffbf2596536bd041dd",
+      "vehicle_id": "1101",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "525f99f36a414fd1af5c3209577c8aea",
+      "vehicle_id": "1101",
+      "camera_id": "93"
+    },
+    {
+      "image_id": "d9d8d985db2a427798aefe0a9badd02c",
+      "vehicle_id": "1163",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "8631e67f67e04153b86149959f5ae5f1",
+      "vehicle_id": "1163",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "b3a8db2dc8684a9cb3ecfe3c29db37cd",
+      "vehicle_id": "1163",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "33aef45ca7664a42a4e2d00f55481d33",
+      "vehicle_id": "1163",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "11619088c799432984f1fd6edc03df29",
+      "vehicle_id": "1163",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "5bec85e21d0c49fa9ad3e79f7c9244ed",
+      "vehicle_id": "1163",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "4d330f2383c84559a650d2859ae45d19",
+      "vehicle_id": "1166",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "8c6f3984b50b449e949a7e5eef16ba67",
+      "vehicle_id": "1166",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "9cabe1a1e48349ddbf4e3230eaea901e",
+      "vehicle_id": "1166",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "68659dc6f6ad46ddaebb6c8cae7cfa6b",
+      "vehicle_id": "1166",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "5b6bbceb0ccb4c789d497a6e35e4c105",
+      "vehicle_id": "1166",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "1439c9e9f51f417685a97348803b6977",
+      "vehicle_id": "1166",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "02840f078a11445693cc869922d8dc1d",
+      "vehicle_id": "939",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "192eb6cdb44f4b87859a892c2c6f1898",
+      "vehicle_id": "939",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "2c9fc31411054bcb87faa12027a0f0f5",
+      "vehicle_id": "939",
+      "camera_id": "76"
+    },
+    {
+      "image_id": "4c374d14082240cd9ef1015d1ba1014d",
+      "vehicle_id": "939",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "e17c96ac83e84f0e96ead30643bc31a9",
+      "vehicle_id": "939",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "99c8df64bccb427ca9062e762789c196",
+      "vehicle_id": "939",
+      "camera_id": "76"
+    },
+    {
+      "image_id": "38468e11252c441f9caaab5815447b98",
+      "vehicle_id": "939",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "a8e28aca4ec940b18640f10f1285fa7e",
+      "vehicle_id": "939",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "f3ded25bd655460191ab571d0cfe5986",
+      "vehicle_id": "149",
+      "camera_id": "75"
+    },
+    {
+      "image_id": "ef980e4fa0fb4d6096c88863de516634",
+      "vehicle_id": "149",
+      "camera_id": "75"
+    },
+    {
+      "image_id": "befcdb0dd14541c39715b92ad4909076",
+      "vehicle_id": "149",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "508cd271212e42ae886110af5bf15385",
+      "vehicle_id": "149",
+      "camera_id": "75"
+    },
+    {
+      "image_id": "0652f9b65d5345c5aef695051bd8117b",
+      "vehicle_id": "149",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "0dc13484e1d64ffcb46d8d7c5bd7939c",
+      "vehicle_id": "149",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "2859815cb9dc4ef5a2a2554f9b223c27",
+      "vehicle_id": "363",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "fda46705a4914676b2826e496958626b",
+      "vehicle_id": "363",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "53c5e520abf04f2aab37d135fa850488",
+      "vehicle_id": "363",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "8cb414a23ec54621b190f7859550bf05",
+      "vehicle_id": "363",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "4f062b84f90444238b1ccdbc8abd8aa2",
+      "vehicle_id": "363",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "92a6e8be4e8d4b54ab696180e866cd66",
+      "vehicle_id": "930",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "35c1138c90c042deb214206fe7d143fa",
+      "vehicle_id": "930",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "2aaf21fca23a4bddb5508c68822ee49e",
+      "vehicle_id": "930",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "2d56660401d641f1b09adbc0215dde59",
+      "vehicle_id": "930",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "ce2e241768604c66ac96b19050066f9c",
+      "vehicle_id": "930",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "b10c831a3a4c46998515cc5e84dd033d",
+      "vehicle_id": "930",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "4cae8d5c06ad4b2eb1a71c4ddadaac31",
+      "vehicle_id": "375",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "566dd709c276445cac3d107f4d096d3d",
+      "vehicle_id": "375",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "1a8e7e068e814820991f4a0f80b3391b",
+      "vehicle_id": "375",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "6b67e84480724a2799d863817777ef4d",
+      "vehicle_id": "375",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "5710980072604476b08fd7a7c91da6fa",
+      "vehicle_id": "375",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "771131762c394a38aa380a3185f911db",
+      "vehicle_id": "375",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "1ccd013408ce4420899bb4d973a9cd40",
+      "vehicle_id": "375",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "eea2d02332a44ae7826c0d492f152621",
+      "vehicle_id": "375",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "672f74a046ae4f338f13ccac14c2bb1b",
+      "vehicle_id": "952",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "283d0965f1c34331a7758f41df399610",
+      "vehicle_id": "952",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "3e5246623bf54c91aa04c38fcc0e2963",
+      "vehicle_id": "952",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "ff535478375d4780a31e067b0674032e",
+      "vehicle_id": "952",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "ac739eb0fcd94e618116747886e3ad27",
+      "vehicle_id": "952",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "880e51cc354048cf9968a99cd03ac80c",
+      "vehicle_id": "1316",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "0bea09e97e4d49278c7a493577ad6be6",
+      "vehicle_id": "1316",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "2b72cbff174642a2be0752ac0a26be99",
+      "vehicle_id": "1316",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "53022b9a45444f56b0b31aa6d270c41f",
+      "vehicle_id": "1316",
+      "camera_id": "29"
+    },
+    {
+      "image_id": "12dc8417b234459183693a3bcbd23aa4",
+      "vehicle_id": "1316",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "c6907200d8d243209dbb0ce83c706333",
+      "vehicle_id": "1316",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "a430fb03d33049babc67613d6acdf828",
+      "vehicle_id": "1316",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "70d5c8cdd3f049a8921b1897108b9303",
+      "vehicle_id": "201",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "70a547ecdab5408baf688064c191418a",
+      "vehicle_id": "201",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "def8d79e03434719bc991764f85ec9ae",
+      "vehicle_id": "201",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "c76ccfe40ecb439cbc7d6c11fdbff974",
+      "vehicle_id": "201",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "c191427d7e0b404c9ba83369075fb1d1",
+      "vehicle_id": "201",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "bf06af2b0c4a4dc188d302cba6fdf3d5",
+      "vehicle_id": "201",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "3a99eee7f8b54f12a384bada83371210",
+      "vehicle_id": "201",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "8297dec0f3b841a2b837558ab2071acd",
+      "vehicle_id": "201",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "2a9e00c44e3d463991cde177ffd083a5",
+      "vehicle_id": "692",
+      "camera_id": "65"
+    },
+    {
+      "image_id": "dfefb591df2b48b98813a73f4f6ed738",
+      "vehicle_id": "692",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "eeaaa5ac03324f7d833862f90da0b908",
+      "vehicle_id": "692",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "56dfc41ba1204b8480deac5d9963b578",
+      "vehicle_id": "692",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "1aa9d0185c7e47c88f8b55c69888488a",
+      "vehicle_id": "692",
+      "camera_id": "65"
+    },
+    {
+      "image_id": "5364d139388d448d9d7dfda9e53744e1",
+      "vehicle_id": "729",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "1a9f52a5b1fa476ab18fafb89f5ea80b",
+      "vehicle_id": "729",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "2f4df3c984a84504966a79a2f9da78cd",
+      "vehicle_id": "729",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "38ca86b373064f6f8ea7658b49bbe330",
+      "vehicle_id": "729",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "94ba5734732e48f290cce3aa8d7e0fda",
+      "vehicle_id": "729",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "76a8efadc5cb49d8a4dd3cb835f6fd8d",
+      "vehicle_id": "1441",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "ac4f2206f6e640d5b73bfedfa8b8d280",
+      "vehicle_id": "1441",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "df522c85379942afad5d7eab5213fca7",
+      "vehicle_id": "1441",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "b2eb708125ec40e6b9c64403d27acbfb",
+      "vehicle_id": "1441",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "b32ad2e012af45d9bd9a66827fab0712",
+      "vehicle_id": "1441",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "ff595817166d448da6ba6277287f96be",
+      "vehicle_id": "1441",
+      "camera_id": "47"
+    },
+    {
+      "image_id": "50a4c7c725ee45e3bcd5eba4c07b51f1",
+      "vehicle_id": "1441",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "3c95e56cc7234cbb94c091531a9d1291",
+      "vehicle_id": "58",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "f68049b00ffa4a8d978532b090ae2b62",
+      "vehicle_id": "58",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "019df33848224006bf565042c625c773",
+      "vehicle_id": "58",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "ac458af593774d768636ad86267fb77e",
+      "vehicle_id": "58",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "74f2716169e74a17b965e234d9531fe5",
+      "vehicle_id": "58",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "a01cbc567cc54eb880e135511a024d8c",
+      "vehicle_id": "58",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "201688846c8f4f2490c2a706e1a60bc4",
+      "vehicle_id": "771",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "d7b41b3e3e4641278e4d7b60c32b67e1",
+      "vehicle_id": "771",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "91b70948d9f445f38aa47abc95b00d8b",
+      "vehicle_id": "771",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "1e572dff5c3345abaf289557175be1db",
+      "vehicle_id": "771",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "565cc18662074feb94e299900b2eb820",
+      "vehicle_id": "771",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "af9007933baf4c93964ce40eadff5f34",
+      "vehicle_id": "771",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "9e686720ec78468abdc87b2ac44a96c4",
+      "vehicle_id": "771",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "991f1aafa7dc4d4699363628c1c4be1d",
+      "vehicle_id": "771",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "a98f899bae1b4eaba6b3c11bacd5b3df",
+      "vehicle_id": "1273",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "c7a49dbc1ba84fee8abf7e85daff429e",
+      "vehicle_id": "1273",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "dd6483b072ec4210a6ee764d41e299b4",
+      "vehicle_id": "1273",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "f12e44661e0243b9baff2540bb461546",
+      "vehicle_id": "1273",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "ff7c503e9b4f43819f4d712a2da0a078",
+      "vehicle_id": "1273",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "b673223b7f3e4d18a6d7e7b70f1e6cf5",
+      "vehicle_id": "1273",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "da26bf5dc8b14238adec3af7cc454abd",
+      "vehicle_id": "1273",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "0cff820aeccf4b8ebb1c976925c10290",
+      "vehicle_id": "1273",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "96b4af09645d485c87a70c426ccb403a",
+      "vehicle_id": "1",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "6d36f30a66704ffe9c9651d39bfcfa1a",
+      "vehicle_id": "1",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "978689c2cfd64c8eacae2352000712f9",
+      "vehicle_id": "1",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "bdf428fa1db04c719a3324a0737a913f",
+      "vehicle_id": "1",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "d74b6d1a97d74fd58b485ce8e12af5db",
+      "vehicle_id": "1",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "c84a0c05f10c4457b063c77ef279a8a2",
+      "vehicle_id": "1",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "c9d1282b44644100861d6200a9ad4587",
+      "vehicle_id": "1",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "85aadb611cb94463a07f7d0b1388e90c",
+      "vehicle_id": "1",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "aa3dece8ad6045e2b404fb8aa8ecd5e9",
+      "vehicle_id": "272",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "0831f9c27e914da2b7b1881dfb3c29b1",
+      "vehicle_id": "272",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "003aba306c784c5e89c258d5ca3f8358",
+      "vehicle_id": "272",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "b85f31150f9d4d2ababe87e8f1693c2e",
+      "vehicle_id": "272",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "0f0b18ec406147d3aa3e670f3927b884",
+      "vehicle_id": "272",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "b48f47a4db024957811ebeba2ccfaf3e",
+      "vehicle_id": "272",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "48cc70f3789c4a67bdfe90c7ee176646",
+      "vehicle_id": "272",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "2dbdf7690ad4458ebc4acb64aaced602",
+      "vehicle_id": "673",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "8f03b5b1b69e412ea934d08f34b008a7",
+      "vehicle_id": "673",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "2c49283d9a344373ad5c10a59849e912",
+      "vehicle_id": "673",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "7935956f223b44e4b2307dfec99174a9",
+      "vehicle_id": "673",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "36872692c98e4d0ea62feab7161a2fe9",
+      "vehicle_id": "673",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "e09c4d2bba684c41af374b6bfc7463a0",
+      "vehicle_id": "673",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "7952fdfd854a438fba2a0ab8fd1f6138",
+      "vehicle_id": "996",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "8a5c0fc1981c4cc6a3597e6d7ddeb2fa",
+      "vehicle_id": "996",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "012d99f1d50645bdab3fea0371ff3ab5",
+      "vehicle_id": "996",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "bcab19f21ce74d7a8cf838fa72ce2caf",
+      "vehicle_id": "996",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "ed3e2a1728564602bed75eb828f42984",
+      "vehicle_id": "996",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "fa6d2d4ba06e4a95b62d1c7856e6c6e6",
+      "vehicle_id": "996",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "6c64bb7bfb4541589ecaf4b0d29db58f",
+      "vehicle_id": "574",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "a35b1bca6f124af1bfec14c0bc8bfe91",
+      "vehicle_id": "574",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "a8dc0d476c8842ccae36ff05bbc94ffa",
+      "vehicle_id": "574",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "8440c9bf03694628a137b3d9db62ea8d",
+      "vehicle_id": "574",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "6fda816a184b426f9ee552c4b55a45e4",
+      "vehicle_id": "574",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "bc70cbceffac485d9ca2b2d6f49c4c56",
+      "vehicle_id": "574",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "011c78822c0c44f381610d3b339fe126",
+      "vehicle_id": "574",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "8ca26181219a4ac48f9ffc92c1a9745b",
+      "vehicle_id": "285",
+      "camera_id": "79"
+    },
+    {
+      "image_id": "26a6adfda6a04a879fc62daba418d2f1",
+      "vehicle_id": "285",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "86f18847a55549bc9cdc60eccf251e6a",
+      "vehicle_id": "285",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "ff3ff5c253744570a8708608f01d1c46",
+      "vehicle_id": "285",
+      "camera_id": "79"
+    },
+    {
+      "image_id": "39b372fd9a60400db2db3eeaf7bf0d8b",
+      "vehicle_id": "285",
+      "camera_id": "16"
+    },
+    {
+      "image_id": "d113cb5cf2e244aaba540684639b6ffd",
+      "vehicle_id": "285",
+      "camera_id": "79"
+    },
+    {
+      "image_id": "8a3c2c8dfd98427fa0f8435bbd39daec",
+      "vehicle_id": "285",
+      "camera_id": "16"
+    },
+    {
+      "image_id": "e4536f4645ce4f0ead7143d505079799",
+      "vehicle_id": "285",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "f657eeb5b63b42f4a0c52c1861fbe5c9",
+      "vehicle_id": "432",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "9e064fed4a854a76a2370e1f7c59296f",
+      "vehicle_id": "432",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "6eaf8cc994b0444eb6019f8cf9ec4c28",
+      "vehicle_id": "432",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "a3518832ac704c1baec3f74704f33bb2",
+      "vehicle_id": "432",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "f1159aaccc6d42eab5f773263923364b",
+      "vehicle_id": "432",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "83d8999bef014d3085f3e47a2866eb49",
+      "vehicle_id": "432",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "96f3b5f3f8584dddb941a1dc66392fd3",
+      "vehicle_id": "432",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "b83b64c882b247b7a3ebefdbaffb1919",
+      "vehicle_id": "432",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "539c4e2bbed84df2a88066bbf9cd1ed2",
+      "vehicle_id": "200",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "608cb59380114f819e6df30404ed50f1",
+      "vehicle_id": "200",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "22a3fdba04fe4913b7d9c584e672f39c",
+      "vehicle_id": "200",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "787c523bba224b2bb8dc4c5ac07ef274",
+      "vehicle_id": "200",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "074060ff9ac84801a97d3272c4b2f7dc",
+      "vehicle_id": "200",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "bd332e73d3ad462499e4cbeced62156c",
+      "vehicle_id": "940",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "94ce0e6610c04d068b2a560474cbec67",
+      "vehicle_id": "940",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "fb13feb0cc1d4bb7b851618fa251e5dc",
+      "vehicle_id": "940",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "df96c52af8ad4698bd245a617492444b",
+      "vehicle_id": "940",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "1b1469d98377499fbdb5fe34709da9ca",
+      "vehicle_id": "940",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "31c53471c1d24753bbc42cd8b95436b1",
+      "vehicle_id": "940",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "556b0cf62f26426fb3ac97366071dee6",
+      "vehicle_id": "940",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "4225c92a25d24af6bebb59f4ae665ee0",
+      "vehicle_id": "406",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "4d11d4234b824cb9a36b6275913d59d1",
+      "vehicle_id": "406",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "476a98dc28c2414f9aa632ec8befa140",
+      "vehicle_id": "406",
+      "camera_id": "41"
+    },
+    {
+      "image_id": "7ca881a0820345d08b2ec3b5530f51d6",
+      "vehicle_id": "406",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "9335562e453f4b04adb36532dafd86d8",
+      "vehicle_id": "406",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "4ed97330a22e40839050ae563fdb97ff",
+      "vehicle_id": "813",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "170e633814124955a733d528ddb18096",
+      "vehicle_id": "813",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a99e5dc02a504d6c9410356e242deb2f",
+      "vehicle_id": "813",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "c900643d5db8492e92848c9cb0ac874c",
+      "vehicle_id": "813",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "408fcf00621c45ba922f0019cb577717",
+      "vehicle_id": "813",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "04f73884c35d4e5d97976e44a008ae2f",
+      "vehicle_id": "616",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "de4b5ed9ea51424ea3b4735d54a445a3",
+      "vehicle_id": "616",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "fb47ea3bd900409d85d61a00e136f54c",
+      "vehicle_id": "616",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "069f3d4962ca4e27a7d02d8e39969958",
+      "vehicle_id": "616",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b31c29a9794a4fab832add97895aa603",
+      "vehicle_id": "616",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "3772fb73ddca40e694549440a21710e8",
+      "vehicle_id": "616",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "8af4064ccdf940179e94c942aba422e3",
+      "vehicle_id": "348",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "a59e73ee03cb490c9b19b559d4dda98e",
+      "vehicle_id": "348",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "a1bd35391fae4bb5adc935f0b18349f9",
+      "vehicle_id": "348",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "e29b88f39fac4ebf9ff6f36ecf793a10",
+      "vehicle_id": "348",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "ecdd8321e5e84bf590e5871fd9164747",
+      "vehicle_id": "348",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "c0d74c003f004c349e05b854943d0c9f",
+      "vehicle_id": "348",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "2d49ba6768b34876be6d4f7994c641be",
+      "vehicle_id": "348",
+      "camera_id": "79"
+    },
+    {
+      "image_id": "4e5c97532ccc4c808563da5decf5b920",
+      "vehicle_id": "888",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "b71ed5cf13ec4377b4d29c2e8436eb24",
+      "vehicle_id": "888",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "fb0b9c200c5741db87175d82b17b0f4d",
+      "vehicle_id": "888",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "74f6011994f2462cabaf51ed3e8142c6",
+      "vehicle_id": "888",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "f33d6bff04454ccf90e348f7a31c3d7f",
+      "vehicle_id": "888",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "be8fc937781e482db87d4c81b1912fe0",
+      "vehicle_id": "888",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "dd1d121a351b4cb290e31b3ce05437b1",
+      "vehicle_id": "710",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "5687f98fb85d48499e16db784fb3ec60",
+      "vehicle_id": "710",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "51f6fdc27aee4f31a7217bc6a54ae455",
+      "vehicle_id": "710",
+      "camera_id": "60"
+    },
+    {
+      "image_id": "95646965bd7e4dad813a312d4a1f66b2",
+      "vehicle_id": "710",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "6c581e1b6f1140f1a516b4267ad905ed",
+      "vehicle_id": "710",
+      "camera_id": "60"
+    },
+    {
+      "image_id": "2b7655fffd584b4baf13894ca2d47e17",
+      "vehicle_id": "710",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "476f60f067e9441aba12c5abb7d3ce7a",
+      "vehicle_id": "710",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "8ccf2697f50245e9b182fb9d085f196e",
+      "vehicle_id": "710",
+      "camera_id": "60"
+    },
+    {
+      "image_id": "0971a73ee5594b598e8fc8f5774b7def",
+      "vehicle_id": "73",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "4dd03d16715a49d98fce909b629115fe",
+      "vehicle_id": "73",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "ddb07be9f49c4535abc6a631d8c1e592",
+      "vehicle_id": "73",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "9e86ac8df372464584fbbd67b3cb26dc",
+      "vehicle_id": "73",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "19b59a6a8149445da022f27bdb4bafb0",
+      "vehicle_id": "73",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "4038e650bbd14697a1dddbe92d7daf4a",
+      "vehicle_id": "73",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "13341f03627a44eda8e36eab97d7ac14",
+      "vehicle_id": "73",
+      "camera_id": "50"
+    },
+    {
+      "image_id": "ce863f7920704f9b9894ab6863d191c7",
+      "vehicle_id": "73",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "7ca3e5521ccf48dc94533089665e75e8",
+      "vehicle_id": "1400",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "c36b27be24774d46b2b5e9fd39ed19f2",
+      "vehicle_id": "1400",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "c70ae9fd549841bc87b12bf64b63ff91",
+      "vehicle_id": "1400",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "9a86c46fbd5844e7bfba604ddde74669",
+      "vehicle_id": "1400",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "21b0c81a7beb48d8b0c22f3f01aa67a8",
+      "vehicle_id": "1400",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "2660cbd6eb564d0bbc806032f70df5d5",
+      "vehicle_id": "1400",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "fa85750c2b0c43e895659ff48f18efb0",
+      "vehicle_id": "1016",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "a21d52f0fdbe48e282529003988c4358",
+      "vehicle_id": "1016",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "8935cf791c534aed9365228d0e4017bf",
+      "vehicle_id": "1016",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "e4a634e82f244f56bf097cba57e58fd3",
+      "vehicle_id": "1016",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "160b7643c49b40d78fd3ee5ae8cc3acc",
+      "vehicle_id": "1016",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "627ae904c4cc48a8b490352f214e7325",
+      "vehicle_id": "1016",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "70f1f067995e4c049a5aa51e644384c3",
+      "vehicle_id": "7",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "5cd207433c594270a775359c342cfe6d",
+      "vehicle_id": "7",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "7bf0996284cf465d95fb1ed81b4afb9f",
+      "vehicle_id": "7",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "9f43cceedd4e4692aadefc29553e5a34",
+      "vehicle_id": "7",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "0a61df0e4fc54580af7bed1188b6ea8f",
+      "vehicle_id": "7",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "8009223cb26e484ba2bd0acb1c0b3134",
+      "vehicle_id": "7",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "d3a0466e4693418d97695f1b54dee60b",
+      "vehicle_id": "1058",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "56ef648037c1415a8838111aa4f2ebcc",
+      "vehicle_id": "1058",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "c7b6d66e61d040a187c45c1b27cf7a36",
+      "vehicle_id": "1058",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "a49d60ec8075408991ad1d6d6206256a",
+      "vehicle_id": "1058",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "baa63d82c89b4867a8659ec3eb0d3aa5",
+      "vehicle_id": "1058",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "78240bdb8afe4737bd83f11303d280da",
+      "vehicle_id": "1058",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "c9b8f402c56b473aa667cc69be7cbcfa",
+      "vehicle_id": "1058",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "71cdf0bcea7d4dddab7512bbe1755b9d",
+      "vehicle_id": "235",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "8f01c3f35cb44fe49c28bf64c71c2d38",
+      "vehicle_id": "235",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "e954144962fc4028a303258208cd9faf",
+      "vehicle_id": "235",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "ce5b425252d54bccaca2f7f1c73d8f20",
+      "vehicle_id": "235",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "8b43de0374534297bcc15b3f0d4805cf",
+      "vehicle_id": "235",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "1852f287971641d4a88da22982dea2a9",
+      "vehicle_id": "235",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "2d155d7fe4d748bd817abf753df9e767",
+      "vehicle_id": "235",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "685fe920ee084d78bddf53f0c829b1f9",
+      "vehicle_id": "515",
+      "camera_id": "54"
+    },
+    {
+      "image_id": "7aa75e92d37e4efab0547da5527e81bf",
+      "vehicle_id": "515",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "b94745d05226411994cfd60d42d58c41",
+      "vehicle_id": "515",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "0970e383702e496989709b9906751c5a",
+      "vehicle_id": "515",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "56416973a5d5410aa10e9249b7281245",
+      "vehicle_id": "515",
+      "camera_id": "54"
+    },
+    {
+      "image_id": "46527d56cfbb422a890a67fc8c4b217f",
+      "vehicle_id": "515",
+      "camera_id": "54"
+    },
+    {
+      "image_id": "1aaa9ef342274bb7aaf54dcf652dae0c",
+      "vehicle_id": "670",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "6a29d25058cb438c80bc96c9d24a8629",
+      "vehicle_id": "670",
+      "camera_id": "60"
+    },
+    {
+      "image_id": "12600dde111c4f8488dff25ffbca1b63",
+      "vehicle_id": "670",
+      "camera_id": "60"
+    },
+    {
+      "image_id": "73be4c1605dc4fb78ed9b9507ea90bdb",
+      "vehicle_id": "670",
+      "camera_id": "60"
+    },
+    {
+      "image_id": "bcbb90ab1c6c4a23966d94c6818bb744",
+      "vehicle_id": "458",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "738291ad52a14ac8a9818433f4132057",
+      "vehicle_id": "458",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "e6bc10a6c17b495baead82cd7c23cf19",
+      "vehicle_id": "458",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "c75feb1093c449e491b450ad732fadc7",
+      "vehicle_id": "458",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "cf23465f61fd443bab4c6eceec40775e",
+      "vehicle_id": "458",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "dc841e175ba4409cb997f00c9c6a428d",
+      "vehicle_id": "458",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "b0db50c5598b4f31a11dc75c2e847144",
+      "vehicle_id": "458",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "03117b0fe6814821b2ada2cf8dcf3751",
+      "vehicle_id": "458",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "de53af4ab7da4939ab51b90ff10fe83d",
+      "vehicle_id": "946",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "c3fcb445bcbe4570ac3bfbbb5b48ed1b",
+      "vehicle_id": "946",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "f08ab7092bce4f1999312cce2ca79d46",
+      "vehicle_id": "946",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "445c349413b84dfab0e764c9e809abce",
+      "vehicle_id": "946",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "87bfbf015abf4285a2ed188233566d73",
+      "vehicle_id": "946",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "e49c5ab3ca5d4ac89ee40d14c8552cc5",
+      "vehicle_id": "1132",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "2b3aa67cd15c404bbda3b827c4f6b428",
+      "vehicle_id": "1132",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "6e90e557df9640c1aeb4148477a8a9fa",
+      "vehicle_id": "1132",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "c9514fa2c11f40a8b9197456900e5219",
+      "vehicle_id": "1132",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "25252eb5eb8141dc850a13fc0d1b78ef",
+      "vehicle_id": "1132",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "7a6a8b57f0d14ea4af0b6e501f6af4cc",
+      "vehicle_id": "1475",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "b4e01ba78e69432ab5a0d31960276e75",
+      "vehicle_id": "1475",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "10648b00c57e4794b8bffbde275f6c44",
+      "vehicle_id": "1475",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "756bbc7375b546ceb9bddf25611117e0",
+      "vehicle_id": "1475",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "836666ff43e441c0af0654588976b73e",
+      "vehicle_id": "1475",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "c95d53666c9749a68bf54cc6722ce79c",
+      "vehicle_id": "559",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "3cdf56affc0a492b9f891bec52525ccd",
+      "vehicle_id": "559",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "1f1af48b9e0e4b188bd491b64f68afa5",
+      "vehicle_id": "559",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "bdd6ded5fb964f19a640e0fa4ddfcf5c",
+      "vehicle_id": "559",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "884cc596d18e46da918d04de1c6ed7ce",
+      "vehicle_id": "559",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "cacc87fcba6f46f5a446fd2ab761fd64",
+      "vehicle_id": "559",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "65a73820e01c45b19683ee76f94216b3",
+      "vehicle_id": "559",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "636eebac1f4f4c0583c396c7ccb67100",
+      "vehicle_id": "559",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "f723e54f287342dab489694817f30900",
+      "vehicle_id": "1248",
+      "camera_id": "2"
+    },
+    {
+      "image_id": "0589694d952841a59b606d4df29540cc",
+      "vehicle_id": "1248",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "c3fc21bc01814bd58d537971432645d8",
+      "vehicle_id": "1248",
+      "camera_id": "2"
+    },
+    {
+      "image_id": "1836c9affc1648a3a25388d17bd81424",
+      "vehicle_id": "1248",
+      "camera_id": "2"
+    },
+    {
+      "image_id": "16645ef6cd144444b94d18f55751e4c5",
+      "vehicle_id": "1363",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "f25cd5b149e44804a577282d29dbfe74",
+      "vehicle_id": "1363",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "1f074952b673425086298352f0ba031c",
+      "vehicle_id": "1363",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "48d4391b2f404b23aaddf458f31a38dd",
+      "vehicle_id": "1363",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "45054aa3f15b43a2b7a93e5c362832b4",
+      "vehicle_id": "1363",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "7a0b3e1030634c549d3f28f568175c97",
+      "vehicle_id": "1363",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "abe57d21aebe4897b2f5652d8f7f47d1",
+      "vehicle_id": "1363",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "55365b01611b4fee833e50d26796363a",
+      "vehicle_id": "8",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "a9c7758ec9fd4f6ba2ef988d2b72460c",
+      "vehicle_id": "8",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "fc00b3b6be5f4434a518c22fd1db840d",
+      "vehicle_id": "8",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "b3d7eef397d04d2e993b06d1d321c99d",
+      "vehicle_id": "8",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "e7d18684565345608608036e07b11897",
+      "vehicle_id": "8",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "41eb470705024a64892964e71c7b2205",
+      "vehicle_id": "8",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "386fc8ca75ef40e393d9705ec9345017",
+      "vehicle_id": "340",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5c51398429e14a15835fe97974140fb0",
+      "vehicle_id": "340",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "7ce53b7322fc488690ba02d20b250cdf",
+      "vehicle_id": "340",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "37b1014d038741fcaf6008b63e36771b",
+      "vehicle_id": "340",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "cf27a4a3c6ac4c82bc293282e5d46a06",
+      "vehicle_id": "340",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "cd406f31902f43d78dc02845fe4b9158",
+      "vehicle_id": "340",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "458a19bd8c0448e7b033e809d3f0cdb4",
+      "vehicle_id": "340",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "9b8826110b3f4eb38bb46e8119b12baa",
+      "vehicle_id": "340",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "bb0f141675ef41848a3a7f436145fa37",
+      "vehicle_id": "187",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "ae8106e2902441caa44a256311a34b35",
+      "vehicle_id": "187",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "c195e77cc4c5466684903911bd5116c8",
+      "vehicle_id": "187",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "0f942924a01e4416a80ebfbfdd2fee05",
+      "vehicle_id": "187",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "1514f494c86748dabdcae2fe3274db14",
+      "vehicle_id": "187",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "a93f1043ff4c461fb0dfeb62b9112358",
+      "vehicle_id": "187",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "520be426fc5049c682b1d2c9256ac37a",
+      "vehicle_id": "187",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "999af24fc08e4382bda8078ebb78cd24",
+      "vehicle_id": "187",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "3a6a19340620491f9340ce2030eacd4c",
+      "vehicle_id": "582",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "8ce003cc0856492692f51137e9a44cec",
+      "vehicle_id": "582",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "2b1d79f7089942a9bfa36fc3244c49c9",
+      "vehicle_id": "582",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "73de3cb3fed94821b8ef950d035c7560",
+      "vehicle_id": "582",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "4ec9008c9c5745ca95c7d5b52e40a0aa",
+      "vehicle_id": "582",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "16f14f36539c4cb3859a63ec01dc8f36",
+      "vehicle_id": "582",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "e4d39a4e46ef4882bebd42e02c56681a",
+      "vehicle_id": "9",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "66790e80d7e141549ecf2efa76ade349",
+      "vehicle_id": "9",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "2820d376a61b466ab6ae90ee80021459",
+      "vehicle_id": "9",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "11a1b53f158f4a4895eaba0e85080a44",
+      "vehicle_id": "9",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "392c0474fd5d42e8b84f810f35ad6d57",
+      "vehicle_id": "9",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "31a9808dd811492fbfcfd4ff247b427d",
+      "vehicle_id": "9",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "d6f61b00a5d54c15a7057ec0e9091d4b",
+      "vehicle_id": "641",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "e8e0a7ae86394586976479403fc5974d",
+      "vehicle_id": "641",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "5d149fa34f3742a2a51bb9ac82d9edb8",
+      "vehicle_id": "641",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "079c55ab37bb4a32bb6472fc1d2b5ca8",
+      "vehicle_id": "641",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "60e8f74bf9f34eca9a34f43ebf2d6e29",
+      "vehicle_id": "641",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "041100eb8d584ec19caad0decd6e9a16",
+      "vehicle_id": "641",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "a62c84ee211e4360b7519c6976df11d1",
+      "vehicle_id": "79",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "4b131dc64ff84fcf940c5e4d2b0a07da",
+      "vehicle_id": "79",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "854832ca41d74d34aab01572a90a0e45",
+      "vehicle_id": "79",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "7a0bc6de752a44fa90f3388df4a7a949",
+      "vehicle_id": "79",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "fe8e3e5900704600a8cc3cd63d961757",
+      "vehicle_id": "79",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "cef6c22780674234b77b788ae32375cc",
+      "vehicle_id": "79",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "d562f1e26c7a4c85b7ab8532401e5797",
+      "vehicle_id": "256",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "901f8db0d05a4b38aeb7e28973ec83df",
+      "vehicle_id": "256",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "0073c1e071e54069b4786633e678cd75",
+      "vehicle_id": "256",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "ad19cccbb6874ba0b7931906436a6998",
+      "vehicle_id": "256",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "48d649080c4641c49118ac97fdfa6b41",
+      "vehicle_id": "256",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "415f75521cb0436a8521b27fef4a09c8",
+      "vehicle_id": "256",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "eaf046dc3db74e1a830e1765479d4bc6",
+      "vehicle_id": "256",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "e4166069ddc74d09b790d5dce3122a0c",
+      "vehicle_id": "256",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "36ed4dba98704f70be3a3896c8050806",
+      "vehicle_id": "552",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "72ca65c429a74c36a193ca3f22ba2b74",
+      "vehicle_id": "552",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "606b4eae12364fc4bcec8152763fdc4e",
+      "vehicle_id": "552",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "5865c15e8edd4bcf97803eebc5c3f34b",
+      "vehicle_id": "552",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "8fbe92f866f64c80b3a84312727c574e",
+      "vehicle_id": "552",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "69d255edd1dd44ebba2b8bd7a7619e10",
+      "vehicle_id": "1020",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "c1df5dce1fa946b68188af887a2244e0",
+      "vehicle_id": "1020",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "70bb79362d1942148a5dfdc80e00ee6f",
+      "vehicle_id": "1020",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "e90298d10720429d9c0261585bbdf6e1",
+      "vehicle_id": "1020",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "59fdb0273ecd449ea0fa306f14fc28b3",
+      "vehicle_id": "1020",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "3d2e332c9c8441fc9a7876e85fc1288a",
+      "vehicle_id": "1020",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "f68901df3a2446aab4ad1535d9857794",
+      "vehicle_id": "329",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "4e3e34b486ee464ba4b740971205760d",
+      "vehicle_id": "329",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "41c1b16297d6440296b8b87ea81159f5",
+      "vehicle_id": "329",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "3852e11fe7e641f09647581463f0366d",
+      "vehicle_id": "329",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "408ba04855544593b8173e1de23d372a",
+      "vehicle_id": "329",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "53df0af88e76456e925ffdd274d8c6d8",
+      "vehicle_id": "329",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "b02e5a0ffe4545d0a3f6e252c1e249de",
+      "vehicle_id": "329",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "d184e59659bc4d11a5328394cfa5d64c",
+      "vehicle_id": "329",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "ba051ce242c84e5eb9e2e5031d514e2e",
+      "vehicle_id": "221",
+      "camera_id": "25"
+    },
+    {
+      "image_id": "0b8ca3b817594febab5a2355c7fc9132",
+      "vehicle_id": "221",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "f0eab5370b0c42f8b711c72be8f7971e",
+      "vehicle_id": "221",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "8f7105dd86034d228273da029ea13e49",
+      "vehicle_id": "221",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "39010b4e8e534411bc5723cfdf2c3c78",
+      "vehicle_id": "848",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "bf4110e65ff748d1bea4fc3ae6adb98b",
+      "vehicle_id": "848",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "73c198bf27a145dabfeae8c4183daa5c",
+      "vehicle_id": "848",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "6f78ec3d545a41e29b4ca423a4dad829",
+      "vehicle_id": "848",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "e827d7e84e9c41048428da63e5285193",
+      "vehicle_id": "848",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "ff7ebd403aff47ac9a62e4ae51e4dfdf",
+      "vehicle_id": "848",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "95385ff38991409ca01d7de1f432ea20",
+      "vehicle_id": "1129",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "399bda5896d244cf8281411bb246a345",
+      "vehicle_id": "1129",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "1c532664cfab417d81c0dd2401e777e5",
+      "vehicle_id": "1129",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "278b0d92ae8b4da886c9cf0d1b09b6f2",
+      "vehicle_id": "1129",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5538df2fe44f4b01bee5918f1f282beb",
+      "vehicle_id": "1129",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "c1d56a1af0154676b6fb7c7e2b64f302",
+      "vehicle_id": "919",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "41d63f7e853a428cbc2b0692a4b5257f",
+      "vehicle_id": "919",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "7ad382d12fae4354b3e3dc34717bcc2a",
+      "vehicle_id": "919",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "29c4cd98bfaf430ea1f28fbdc04fca9a",
+      "vehicle_id": "919",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "2defbec298a24ec68ebb2ed368678769",
+      "vehicle_id": "919",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "c660f10e8e1d4d6faf96695e8fe091ef",
+      "vehicle_id": "919",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "af247c07691445299f8c739094afa7e3",
+      "vehicle_id": "139",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "d618f23f5dff461288589cc98d74295a",
+      "vehicle_id": "139",
+      "camera_id": "46"
+    },
+    {
+      "image_id": "df480beee3dc46f585e955be5515610b",
+      "vehicle_id": "139",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "6e5807a796424b698bfd614127941c83",
+      "vehicle_id": "139",
+      "camera_id": "46"
+    },
+    {
+      "image_id": "a7e58aa1c7ba428cb67bc01a439d3859",
+      "vehicle_id": "139",
+      "camera_id": "46"
+    },
+    {
+      "image_id": "5b029256f8e14d86841a9597dc51ce8e",
+      "vehicle_id": "139",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "acbb2297ae6d47db8944d63a69629a33",
+      "vehicle_id": "139",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "09be090b970d4bbab186b676eece1fd9",
+      "vehicle_id": "139",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "bf6461076aea41bdaa1306e14ed7a8dd",
+      "vehicle_id": "932",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "5c6e6a339bb04c5ea939a670a60fd6d7",
+      "vehicle_id": "932",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "facf080be9e14ba0aac5c5015807435d",
+      "vehicle_id": "932",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "21433257e7c740e49b611e5eb3a37a1e",
+      "vehicle_id": "932",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "a166a8b9c29a4a02a08ca2a42be4e86a",
+      "vehicle_id": "932",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "a06c6470e670489ea2ce87d8337e4b77",
+      "vehicle_id": "511",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "3f7b86a40d964eccbbe55d836723a3b2",
+      "vehicle_id": "511",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "529f7b2ecb164ef394c503d5b6d170d7",
+      "vehicle_id": "511",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "a57e9230c6794e7d8ad7ae98d24d2739",
+      "vehicle_id": "511",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "5edb2d5f05ac42f78b0b9760ed86fd21",
+      "vehicle_id": "511",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "92d665883d8a4cb4a061687c8b8ba685",
+      "vehicle_id": "511",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "6f0e671f452c4b618f91d9a4ff80a4fb",
+      "vehicle_id": "788",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "48436b4e14b143468cfb83be4138267b",
+      "vehicle_id": "788",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "7b2003016d294f1d9121ec7642c3dc4e",
+      "vehicle_id": "788",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "d3b2d79d8cda47f29fb09671c4a8828b",
+      "vehicle_id": "788",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "ae60b6e268704cc5aa838e49c625121a",
+      "vehicle_id": "788",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "9e321606529749d5a2f75635994a003b",
+      "vehicle_id": "788",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "78aaf09f86734dbca23a1f7ff73d6dc2",
+      "vehicle_id": "649",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "0194e95b4d7e48fd83e9f7c92872c599",
+      "vehicle_id": "649",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "3ef89b4e86f545d1a2d98499728a0cdf",
+      "vehicle_id": "649",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "c1dd48950f94437ca5785b02bcb7ab75",
+      "vehicle_id": "649",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "54624825e688440aaa4af6031053ead0",
+      "vehicle_id": "649",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "850594ceff3d4dd092410f3eca380534",
+      "vehicle_id": "649",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "0094d599949c4a02880eccf896788e76",
+      "vehicle_id": "1170",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "80e6985437114943bc66ea5e302724f1",
+      "vehicle_id": "1170",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "1fe01bee40e64805a14481385e8e936d",
+      "vehicle_id": "1170",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b25f41f5e7e14c6c81343f711f60e1ad",
+      "vehicle_id": "1170",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "35129561951548998dd559f30329b9aa",
+      "vehicle_id": "1170",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "c8c025fc994f4ed7a7a24bfd28e00788",
+      "vehicle_id": "1170",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "6ed10f317e254aa88b7c5b3cce798db9",
+      "vehicle_id": "1170",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "ea50ba25b8044775ac220cefba621407",
+      "vehicle_id": "1170",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "2247975e04f44782846358b4978861a2",
+      "vehicle_id": "207",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "b4205bc0849741539e5437460409d637",
+      "vehicle_id": "207",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "d0e7164cfb9c46a2b267b040008f7578",
+      "vehicle_id": "207",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "c918d5cd600343b09fe5b8b3f77a715e",
+      "vehicle_id": "207",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b247ec579119472eba00c627f891b1a6",
+      "vehicle_id": "210",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "547e1a41bbf64532b2d074019c19e44c",
+      "vehicle_id": "210",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "7e8ba827cc054304b4f8e6335951fd21",
+      "vehicle_id": "210",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "a89d96e44f0f4e008cd950e9868c00d6",
+      "vehicle_id": "210",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "dbe7e5cac1394725a35d23bfe6b64b50",
+      "vehicle_id": "210",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "fa35f972b01c4b339d709542af9261c0",
+      "vehicle_id": "210",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "af8b9a4333ce47f799cb39a3f2b26cf5",
+      "vehicle_id": "1198",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "8d1fa648006e4105995438bc6a90e793",
+      "vehicle_id": "1198",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "8e9da8c60c39437e975a7489f04a25ff",
+      "vehicle_id": "1198",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "44c2d3b125b444f0be3413c3d6642435",
+      "vehicle_id": "1198",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "deedef29363647b69630228b57d7f4e9",
+      "vehicle_id": "1198",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "9b98ff4e6cd54cebba21a4096d80d5e0",
+      "vehicle_id": "1198",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "727e8b7901df4c84b4f72b787b0b163f",
+      "vehicle_id": "154",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "69bab896511c4301b8c10cdee85d15d3",
+      "vehicle_id": "154",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "2dd0e1c8ee834b3ebed18c78bdcd9e4a",
+      "vehicle_id": "154",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "9837bc343bb54a379d474887dba80a69",
+      "vehicle_id": "154",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "8f85984969d146d9aabe5adcae4bdf96",
+      "vehicle_id": "154",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "74877677629e45a780fd409abe793043",
+      "vehicle_id": "154",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "e176042854064144932d59277d344c88",
+      "vehicle_id": "1154",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "3710c4ae599b4b908245fb626f0af3b3",
+      "vehicle_id": "1154",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "91ee1d980d4442cbb48b68279051165c",
+      "vehicle_id": "1154",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "3ae1a1e1c37345aba6eddf39c2ae30f7",
+      "vehicle_id": "1154",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "163b2f69d37245eab032365a1594f2e8",
+      "vehicle_id": "1127",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "458ba7ca707443baa41e19c5e72bb721",
+      "vehicle_id": "1127",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "5381ab03ba064b76b91fab219d0c6802",
+      "vehicle_id": "1127",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "efdb8128e1ec4ed4b35c448438503c44",
+      "vehicle_id": "1127",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "ade33762c7e244ada7ebb924fec463f0",
+      "vehicle_id": "1127",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "7738befa8d984804b8d8ccce54e5c5ef",
+      "vehicle_id": "1127",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "96193706d2674e38a500fcac5a328fef",
+      "vehicle_id": "282",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "29d9f3c544e349b6a64b567c16f52c0c",
+      "vehicle_id": "282",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "35db65d4644844349de09dede9cc1dfa",
+      "vehicle_id": "282",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "5e65c6dacf3d406db869a2c735160040",
+      "vehicle_id": "282",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "2d31edb0089b48b28061ec0f05325db6",
+      "vehicle_id": "282",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "f776ff5b53514c0f8a697f00a37d71e0",
+      "vehicle_id": "282",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "693b346a1f4e4d81bef3e7e20e9a31ed",
+      "vehicle_id": "1338",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "5ab52bb6a33e4c45a8e4b21060110a8d",
+      "vehicle_id": "1338",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "0e4aef7b3cdb4f25bf9a5867100e4165",
+      "vehicle_id": "1338",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "444eaca2319f4e7a992d0907359f4e4a",
+      "vehicle_id": "1338",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "96b686f79c8e47e091e513092dbeec24",
+      "vehicle_id": "1338",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "856a3fa4b1de48aca952bf70db8b03fb",
+      "vehicle_id": "1338",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "ac6eb8be0d84449a8d926b147a9fe276",
+      "vehicle_id": "1338",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "545a447adc7b4876ba54c28ac6161dc5",
+      "vehicle_id": "1338",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "395c22db326348d591aa1eadc960a91c",
+      "vehicle_id": "900",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "4473ec14ed19439782979cd0f7112c98",
+      "vehicle_id": "900",
+      "camera_id": "30"
+    },
+    {
+      "image_id": "833131cc496a4cdda40a2e55ae87b37a",
+      "vehicle_id": "900",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "52096473cbdc48d08a98f6e7d4cd75bc",
+      "vehicle_id": "900",
+      "camera_id": "30"
+    },
+    {
+      "image_id": "0bcaf16f8da94abc873cf16e3d904a2b",
+      "vehicle_id": "900",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "8958f83bfa8b4441a0577af484954080",
+      "vehicle_id": "900",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "43320cf6611242c380361ced5c688d42",
+      "vehicle_id": "599",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "aa4ad47fb8ca4a34a9a19fa670106937",
+      "vehicle_id": "599",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "744b6cfb880d4748acc34df9fb85fc09",
+      "vehicle_id": "599",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "4f38e347a81a49e9aec89ccbd9ddaae2",
+      "vehicle_id": "599",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "9e2cf1c6d98049968417c950745862cd",
+      "vehicle_id": "599",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "d5ac85016daf40a4a124d5d5a98b7552",
+      "vehicle_id": "1022",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "5ccf0841ab4844d589835f60e67ab2a0",
+      "vehicle_id": "1022",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "11b60b471a18429b836c6c356d503695",
+      "vehicle_id": "1022",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "c4aca5297852432ba0424301a35ed4a0",
+      "vehicle_id": "1022",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "7b1641c69b72417686340c4d443aad3f",
+      "vehicle_id": "1022",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "f5755fdba73f48deb9cf8cb866da97c9",
+      "vehicle_id": "1022",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "66af634ac43e468894416014f9eefbfd",
+      "vehicle_id": "1022",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "fe54a5877fb340e085e6dcce0358d0dc",
+      "vehicle_id": "1022",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "04f7688149c6419a899abf79928625de",
+      "vehicle_id": "1438",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "e45f8aba73e544c39e9fd4a0af26ecce",
+      "vehicle_id": "1438",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "af6442572f1a415ca220fa27d668000e",
+      "vehicle_id": "1438",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "fccd61f18df84197bdbea22087052508",
+      "vehicle_id": "1438",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "2ea166c89a294d0181278c4d41708e39",
+      "vehicle_id": "1438",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "af439e30cf5a4c90b38d554dbf9be2ad",
+      "vehicle_id": "1438",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "015a59a8e3a9439d98adfb7b64e41c6b",
+      "vehicle_id": "1438",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "9c4fd7b2359d4b9b99aee82acf15310f",
+      "vehicle_id": "852",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "76137715d3bd421699ada76949da3b8b",
+      "vehicle_id": "852",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "389bf105c03e4a02b0982d75e258758b",
+      "vehicle_id": "852",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "246893e5f1a34d0fb07331789dee9fb4",
+      "vehicle_id": "852",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "a0d74cdaed44492cbcedcfdad1a5b548",
+      "vehicle_id": "852",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "c656596a7cfa4caab1019c167d073080",
+      "vehicle_id": "852",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "23e7c842c67f4b6faf081b6828e59f25",
+      "vehicle_id": "802",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "c6059077958a485b9bfd0d2801321bb3",
+      "vehicle_id": "802",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "87a99abfa7ea4f359e15adbd89f2727d",
+      "vehicle_id": "802",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "0a75295272004b2c9e0cd0fd2f5dd234",
+      "vehicle_id": "802",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "7d8423c7e2fc4a1b9daf6cd60d496a81",
+      "vehicle_id": "802",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "5993a2311296402cae5b2fd778512175",
+      "vehicle_id": "802",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "a1dbc74362fc421aa643f27f2c5c3794",
+      "vehicle_id": "325",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "d0aecb075c504ebea231f46a846ef917",
+      "vehicle_id": "325",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "55afcbb50796481ab233908292f2e36a",
+      "vehicle_id": "325",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "40801863becf4b3aae76503a734bec53",
+      "vehicle_id": "325",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "d52956fbab7a4000b07327d7e8adcc64",
+      "vehicle_id": "325",
+      "camera_id": "30"
+    },
+    {
+      "image_id": "25f61be9fb2d4e86afb48e034fda7da8",
+      "vehicle_id": "325",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "26b2a44a3f5f44e3b40ade3d4dff081b",
+      "vehicle_id": "325",
+      "camera_id": "25"
+    },
+    {
+      "image_id": "cb416cd5161c48d6a0ed826e90b4e412",
+      "vehicle_id": "797",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "a40c16fc217a4a36860160677f204fb8",
+      "vehicle_id": "797",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "21279f50f10543a493d88a87bca69e7b",
+      "vehicle_id": "797",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "8facb6c9b6ba4e18870bf009e4d2e2f0",
+      "vehicle_id": "797",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "2fb45d33414b460b97eff25b63453022",
+      "vehicle_id": "797",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "9673bfccd3bd40a3b3f5537537cdd8cb",
+      "vehicle_id": "31",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "4fefc99c38cc4c0ebac23a81e383d351",
+      "vehicle_id": "31",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "ee04941de1104a6c94a2d07cf6657dce",
+      "vehicle_id": "31",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "39dfdee0654f4b62a987e4367a1a6484",
+      "vehicle_id": "31",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "50934dc4ae9046838cd233f03d2dabd5",
+      "vehicle_id": "31",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "eaf4d4942f014fea836ba445fbfb1c7e",
+      "vehicle_id": "31",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "5eb5679b4269485abe0f82dc69bc4ed2",
+      "vehicle_id": "630",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "6be41f7eea8f46bdaebb948fdca06103",
+      "vehicle_id": "630",
+      "camera_id": "50"
+    },
+    {
+      "image_id": "d43eb45377b2437e9e6641bea0406736",
+      "vehicle_id": "630",
+      "camera_id": "50"
+    },
+    {
+      "image_id": "c6101ad7a7964b90a821189702d0e9fe",
+      "vehicle_id": "630",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "e169d6010b0d4ebd96b864c3cbf50d29",
+      "vehicle_id": "630",
+      "camera_id": "50"
+    },
+    {
+      "image_id": "45977d189f40433d8d0cb8b0e1ce4a3c",
+      "vehicle_id": "630",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "88f3a41867f142c99bf37e1c3caba257",
+      "vehicle_id": "712",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "891ecbcae4654909962d84079d763639",
+      "vehicle_id": "712",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "63a0eb8f0c8e464a8aae0f288bc4670b",
+      "vehicle_id": "712",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "8ff961d202b2479ab109c0f41fdcfe81",
+      "vehicle_id": "712",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "f7fc2a71ab0d4b79968905dcf233605f",
+      "vehicle_id": "712",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "5af2b23f7b694fe0a87a579924a2805f",
+      "vehicle_id": "712",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "8ec914f50fc542f2b916a0754a2f7784",
+      "vehicle_id": "1024",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "d67110040ace460e973e864ffe7f165e",
+      "vehicle_id": "1024",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "5bfd527b44554f6a8aeccbe2a2e02ee1",
+      "vehicle_id": "1024",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "b44af9ab60b541eab4ff7a466dcad663",
+      "vehicle_id": "1024",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "9d3cc3bd80f2433b9cbfeba6d99bc483",
+      "vehicle_id": "1024",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "874a21e917684adf9f8053a6c5d10b17",
+      "vehicle_id": "1024",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "d5959c842705431f9d2c631348fd6f0c",
+      "vehicle_id": "875",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "9c3b5164e43245eabe1d24af8572d32a",
+      "vehicle_id": "875",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "759956e0a35f472aaf6b421327dc9ed1",
+      "vehicle_id": "875",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "d7e0b81431b84c758eca199359a7531f",
+      "vehicle_id": "875",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "3e5305292419499f9ce8192ab83d0861",
+      "vehicle_id": "875",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "cd976cb253c34b29ac8c78bfe134102a",
+      "vehicle_id": "875",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b3bb416019c24a448e3376e519bbf737",
+      "vehicle_id": "890",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "d0ca228d6a774f7a85c6eccedf1ec354",
+      "vehicle_id": "890",
+      "camera_id": "55"
+    },
+    {
+      "image_id": "83a04aa37c7e433082abba58b233dacb",
+      "vehicle_id": "890",
+      "camera_id": "55"
+    },
+    {
+      "image_id": "cbd0ec40265a4332a7fa9cedb6d95333",
+      "vehicle_id": "890",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "870659db252647aa92adf46a22307d9f",
+      "vehicle_id": "890",
+      "camera_id": "95"
+    },
+    {
+      "image_id": "cf19c875de0e477eb2c3825c956741a1",
+      "vehicle_id": "890",
+      "camera_id": "55"
+    },
+    {
+      "image_id": "2853a0342f0a497db48eec4195bde6f9",
+      "vehicle_id": "1303",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "f3bdaf72d22e4e558e9e47de8ea94b00",
+      "vehicle_id": "1303",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "40fd02df1bd942edbb90024d3b2f1049",
+      "vehicle_id": "1303",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "918dc97e7d844a0ba2b9ba03780fc661",
+      "vehicle_id": "1303",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "d00f79d9e7d94a63a19ec351b8ff9330",
+      "vehicle_id": "1303",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "d4c940b8d99c4f5b9448a8fcea8b15e1",
+      "vehicle_id": "1303",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "6c6dcabc71ec40cfad78ce8384d367c0",
+      "vehicle_id": "1303",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "c8a07b0a180e404abf2efdc09c43b16b",
+      "vehicle_id": "1303",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "6b2056a09c3e43f097300b09a16e13cf",
+      "vehicle_id": "225",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "6de25f052c3f43e2a6bc0a3383554e56",
+      "vehicle_id": "225",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "b8c5d8a7d61f4bac8f871b6006245e08",
+      "vehicle_id": "225",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "271d211d31f94e679f553a7b017ee539",
+      "vehicle_id": "225",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "fa606dcf3c2d4eb5a589a819b1c2cdf7",
+      "vehicle_id": "225",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "8e0882c3ff3544eca9359b961607bcb8",
+      "vehicle_id": "225",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "4fd46fc71f2d461984c81471ee35980a",
+      "vehicle_id": "225",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "4ce54064a5ab4393a4600b1bf33e6acc",
+      "vehicle_id": "225",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "15da14bfc30f46749c668fdd827b51db",
+      "vehicle_id": "1492",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "1862572b923642e593fdbc54d07c75b5",
+      "vehicle_id": "1492",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "3e0448c0a69b4deaac16da520fdfe64b",
+      "vehicle_id": "1492",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "28fb9852c0334c418fe52b5c48dd1cc7",
+      "vehicle_id": "1492",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "f48870ba011a49cea2a2fb70b26cbb89",
+      "vehicle_id": "1492",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "1d55fd18105e4b078e18be97715b4eb9",
+      "vehicle_id": "1492",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "de70781c5d244e7783bc042f1e42655b",
+      "vehicle_id": "1051",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "1bfe5637094e466ea3b949354d8eddf6",
+      "vehicle_id": "1051",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "ca3585f8cdab474e87977b18421ea898",
+      "vehicle_id": "1051",
+      "camera_id": "87"
+    },
+    {
+      "image_id": "2bf7f7c39e3f4f42a305ba159fb1ecf9",
+      "vehicle_id": "1051",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "e3d588fd2da14c47897adbdcc5e6c307",
+      "vehicle_id": "1051",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "79a68794a3db4cd5aac63c074b0f36a4",
+      "vehicle_id": "1051",
+      "camera_id": "7"
+    },
+    {
+      "image_id": "23022dee3f9444d9aebba70cb1ff6933",
+      "vehicle_id": "908",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "77cf54539d6e4c6aaa7197781f378d5f",
+      "vehicle_id": "908",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "e1a5239979e24a2ab07c733e8cf681c6",
+      "vehicle_id": "908",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "948750ed87ab4b67899e2dcd1d61cc92",
+      "vehicle_id": "908",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "0cdc1905baae4d1d89a6ba71a9e8857f",
+      "vehicle_id": "908",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "4faf5ced1ad34be192e4de0042fa574a",
+      "vehicle_id": "541",
+      "camera_id": "3"
+    },
+    {
+      "image_id": "fb38ea28fa684b4293056ee6cbf0cbc2",
+      "vehicle_id": "541",
+      "camera_id": "3"
+    },
+    {
+      "image_id": "0d1dd7abe90c4bd79a98713cc7b15350",
+      "vehicle_id": "541",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "dfe624a02d954399be0816cf3540f7c9",
+      "vehicle_id": "541",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "ce06541eb39d4d22b23ca2f707169e39",
+      "vehicle_id": "541",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "7cfb742d0faa4c408a28d6df7e4b6948",
+      "vehicle_id": "541",
+      "camera_id": "3"
+    },
+    {
+      "image_id": "38cabbd472bb45f2b654d81d393808c2",
+      "vehicle_id": "358",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "f2b5a50ffc4d458ba6e51f55d8cd6005",
+      "vehicle_id": "358",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "74973c431c944adba53d8da3bf52a77d",
+      "vehicle_id": "358",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "df06fc8b0ecf4d9aa5b485fcf91c1eb4",
+      "vehicle_id": "358",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "7824863761a0474b92b715bc74b016e8",
+      "vehicle_id": "358",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "d15891c59e0048849c3616d3bd769cfb",
+      "vehicle_id": "358",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "9743bfacbf704c94ae427df85e39a0ca",
+      "vehicle_id": "1209",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "34cc666b2b3645aca9b45266c0ffb1a0",
+      "vehicle_id": "1209",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "c8f2da0c189e47d5b89444504262185d",
+      "vehicle_id": "1209",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "aa42260186a34da8840c7c47a959f0bd",
+      "vehicle_id": "1209",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "263ee593bb6b47898535b6e892ac199e",
+      "vehicle_id": "1209",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "3a1809af6e614d99bf462065459a3e54",
+      "vehicle_id": "1300",
+      "camera_id": "47"
+    },
+    {
+      "image_id": "98a5070b9e5545eba630dd16f25c365d",
+      "vehicle_id": "1300",
+      "camera_id": "47"
+    },
+    {
+      "image_id": "0c09adfe227f4a7493ca79c0ff7a4257",
+      "vehicle_id": "1300",
+      "camera_id": "47"
+    },
+    {
+      "image_id": "560e2c7697074ced870c2d678892d94f",
+      "vehicle_id": "1300",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "bc07896a5c4b4c168ae8267bcb6f7891",
+      "vehicle_id": "1300",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "38e5c6c4571c4072a37103ffc2ae9ea5",
+      "vehicle_id": "638",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "69c42daa6ca14140a411d31f73b3be02",
+      "vehicle_id": "638",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "5c849896471345359eb4c2a5088698b0",
+      "vehicle_id": "638",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "2355a89d771f4646bece09c033189555",
+      "vehicle_id": "638",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "dda2f2af123a44788531dbb498836014",
+      "vehicle_id": "638",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "cbf2e65239a349a098e6e8b764ef0805",
+      "vehicle_id": "685",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "1703403fccb44293b1fbc1da13d4b098",
+      "vehicle_id": "685",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "05be28256fc74eacbad59ca92d0ecca0",
+      "vehicle_id": "685",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "a6ed012192b24d04b4b0f424955adf83",
+      "vehicle_id": "685",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "498de15f44e0434eb4e609a491462adf",
+      "vehicle_id": "685",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "0bab10bf5ad84ef3a56102f36074b940",
+      "vehicle_id": "685",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "762f0d403747451cb14486a3f97d1a11",
+      "vehicle_id": "685",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "e05c7e8f8d364b00be5a74eec20e8061",
+      "vehicle_id": "685",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "760337823787489abb5012a6eee918d3",
+      "vehicle_id": "1539",
+      "camera_id": "72"
+    },
+    {
+      "image_id": "443d041e3557489391f4088ac8102fa7",
+      "vehicle_id": "1539",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "99131edc4afa4ba4a435bc33319df251",
+      "vehicle_id": "1539",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "d8e9ec2164624ae4a7e45c795ad0080e",
+      "vehicle_id": "1539",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "0368c89615d645d7b02489b84b65fa86",
+      "vehicle_id": "1539",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "f103861e8055458ca068a4019022a0f6",
+      "vehicle_id": "1539",
+      "camera_id": "72"
+    },
+    {
+      "image_id": "2a240615b5f04d9cbdf62c509c06acff",
+      "vehicle_id": "1539",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "d435de659d5c49ef8461e41075127b0e",
+      "vehicle_id": "1539",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "e5fdf44ffb27439da74371c310b8a57f",
+      "vehicle_id": "218",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "bc613b76162940e7b9fd2bb8e8e8607b",
+      "vehicle_id": "218",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "a8e3e0275aa049a6b9d6e1d62cc9fd53",
+      "vehicle_id": "218",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "7014bcfc543c4b059069d6d14c5f5ee5",
+      "vehicle_id": "218",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "7e0d6746ec2c41d0b02585b2356cfd1d",
+      "vehicle_id": "218",
+      "camera_id": "83"
+    },
+    {
+      "image_id": "23faae06a3bb454cb706cececcf59f81",
+      "vehicle_id": "218",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "b90eb7215bf64927a73a557808fc7b66",
+      "vehicle_id": "1190",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "89f64cf731184a448581e8504393e4f4",
+      "vehicle_id": "1190",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "fe5a426f2a4d4e64823e7b3ea38d6012",
+      "vehicle_id": "1190",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "5ad7fc4894d14386942b4b0fddb727fd",
+      "vehicle_id": "1190",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "7de251c59f2d443da849d1f01f488a46",
+      "vehicle_id": "1190",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "ff05d9751033416bbef3810c0e8212ee",
+      "vehicle_id": "1190",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "0144eec78bd946abb983f6082c0f5dff",
+      "vehicle_id": "787",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "951b8cf0c107451baeb8ae86a2d91875",
+      "vehicle_id": "787",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "9e54381cf93240b0a2c871c35387b9b3",
+      "vehicle_id": "787",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "a157373b8f834e1cb25116890c4e4791",
+      "vehicle_id": "787",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "78023562a5b548fdb31eadb44be7eff3",
+      "vehicle_id": "787",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "1888835a653e4fd4ae08ed57e038d2f5",
+      "vehicle_id": "787",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "26f713af133848aaa86254f0197544bf",
+      "vehicle_id": "787",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "f368431f36ab443ebe920d0059219abb",
+      "vehicle_id": "208",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "ce9132cb595f431eb8e9525415a809d8",
+      "vehicle_id": "208",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "0e041e2b892a48208e289b60d7ff1321",
+      "vehicle_id": "208",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "c4debdb813de42488347a61fe9844099",
+      "vehicle_id": "208",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "265b6257356c4a00b65203f528a8b979",
+      "vehicle_id": "208",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "2110cddae6a442dda993c55a12921e3b",
+      "vehicle_id": "208",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "bfe6cd98d3c84dc2988c8d39dbd4d835",
+      "vehicle_id": "208",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "2f8eb75ad722467b84ba20d5e4a5fbef",
+      "vehicle_id": "208",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "9b016ee3bc164f53aa54a73a83a5b7b6",
+      "vehicle_id": "538",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "d4f13bcbad4847399b85bd9c8eb16008",
+      "vehicle_id": "538",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "bc9cceca66d84c798003c288777c0017",
+      "vehicle_id": "538",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "61b241450d134d0e935327acaf7434ae",
+      "vehicle_id": "538",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "9ec9b82183ce4d458f2f75436be6c9af",
+      "vehicle_id": "538",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "8d90b954abde478bb14ca0404f8aa1e2",
+      "vehicle_id": "538",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "d4c6cc0946f2433dbdfad084f8108a51",
+      "vehicle_id": "546",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "49db54dc3eea42aa9c6fd4652c0b53b1",
+      "vehicle_id": "546",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "2678ad1dda1a408fb619403ac0a6fdf4",
+      "vehicle_id": "546",
+      "camera_id": "65"
+    },
+    {
+      "image_id": "9b5a53523bca47ba9f44b953d0d66cf3",
+      "vehicle_id": "546",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "918e6456406a4bb487d4331613d349cf",
+      "vehicle_id": "546",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "576633332e48499a8c7199c2b6ebff41",
+      "vehicle_id": "546",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "63cafe8f6d1448b7bdf96f93b2615950",
+      "vehicle_id": "546",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "99e66290811a4e139bda72afe2781d0d",
+      "vehicle_id": "546",
+      "camera_id": "65"
+    },
+    {
+      "image_id": "d0a42191b29047c488f9ebdfbe96bd5d",
+      "vehicle_id": "26",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "37e560d7c64d4556a44717c5ea5fca63",
+      "vehicle_id": "26",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "effefc571dcb44b390e9d4c8ecaaa9d3",
+      "vehicle_id": "26",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "d2da648bf5d04a0c8d0b161762f49dfb",
+      "vehicle_id": "26",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "5fdffab52042416495f06f58334bb8c8",
+      "vehicle_id": "26",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "368195c7226f47c1a85080a3d122cf76",
+      "vehicle_id": "26",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "9bed6ea3b45a4dec96238ab04b073888",
+      "vehicle_id": "1015",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "fe5fbf83b3ca4ca987eb41dee78052ee",
+      "vehicle_id": "1015",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "501876df7ac94a31b49078596f69678c",
+      "vehicle_id": "1015",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "bfc4d31c510b4348807ddc4c96f96593",
+      "vehicle_id": "1015",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "1063bb0df5794c8f8e774c6f8c5f35ac",
+      "vehicle_id": "1015",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5db50abe6e0d4b439d74312bc3a379a0",
+      "vehicle_id": "1015",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "7393b27904c54b48bd5bdfa04fd90b3a",
+      "vehicle_id": "1118",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "86a94e2d2c394e3096bbae6001197b35",
+      "vehicle_id": "1118",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "819344de619747bfb67263062d253cbb",
+      "vehicle_id": "1118",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "b3dbadfaae0f4a0ea2543f5d04697201",
+      "vehicle_id": "1118",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "3c780ad3dead4ff1a7dffaef048f5c27",
+      "vehicle_id": "1118",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "05cd40d3848e46d4b5f520fc743be8dd",
+      "vehicle_id": "1118",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "04b753f14dad4631a0f5f0aa8374e422",
+      "vehicle_id": "1118",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "7cacb0af3b49460f91e1436a3007ede7",
+      "vehicle_id": "1118",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "2a0a39101a7b49389ea27c2bca5f14eb",
+      "vehicle_id": "706",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "2904dfe5b39e44be87035ed023babc68",
+      "vehicle_id": "706",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "d06767cd19094d51a365353bc2fe8c83",
+      "vehicle_id": "706",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "d671b2e8b28b4add95b031e64ad7ee6d",
+      "vehicle_id": "706",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "831fe0568c854a8eacfdfef22f965b11",
+      "vehicle_id": "706",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "d0adc714d9e2437999d08c32c0a1ff0d",
+      "vehicle_id": "1040",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "301268e3b5384b1f97a814ea81b2f3dc",
+      "vehicle_id": "1040",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "35ded009542e472bbe284d3447005ec8",
+      "vehicle_id": "1040",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "2d95eecbc4784affbf277f4fbe0b3cfc",
+      "vehicle_id": "1040",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "ad64de7148a34e3b8ea46b253ac9d732",
+      "vehicle_id": "1040",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "8a164d28096b40e99b5fcf033e95cc8a",
+      "vehicle_id": "708",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "82c318fe73d64ea7bad3c4034ec84491",
+      "vehicle_id": "708",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "b7d63a3f137247b1bd9fbd9d8e6e1b59",
+      "vehicle_id": "708",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "3dde649fee4640f1b1b2c1369cc174c8",
+      "vehicle_id": "708",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "d985443e3cc34759a3d97bb5f603bee5",
+      "vehicle_id": "642",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "a681ae89a0c74fa0ad37d1465287a84e",
+      "vehicle_id": "642",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "85a1aee162e24ced873900c1a15fd897",
+      "vehicle_id": "642",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "f636412ba2dd4aa3b8610a16df7815be",
+      "vehicle_id": "642",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "9ee933ab2f404494a7a531ae062c13aa",
+      "vehicle_id": "642",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "5a009c38e8c54817bf1fcca595d76c8f",
+      "vehicle_id": "642",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "6084ed10996848f8b0b8551fb17459ab",
+      "vehicle_id": "293",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a1917badad4a49ef84e4ca054dab34c4",
+      "vehicle_id": "293",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b8d3b53dcf7e41efbc8afdc1be64b9e0",
+      "vehicle_id": "293",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "369555b4946c4dae8567dd4c1e14ec3a",
+      "vehicle_id": "293",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "68a5545c9b3c4e0fbc04a5375c03b5fe",
+      "vehicle_id": "293",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "a3b025be60cc45cc95b3560e3606b221",
+      "vehicle_id": "293",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "135860865834427dbb221200b8a580a9",
+      "vehicle_id": "1038",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a9d483e6d60844109bbc5f4f723e4efe",
+      "vehicle_id": "1038",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "b86f6f1c279d490080ec3805aa7d5793",
+      "vehicle_id": "1038",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "2da2685b7b644d9999974a428c9ea21c",
+      "vehicle_id": "1038",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "27cbe30efa0149638087c48e79d2efb2",
+      "vehicle_id": "1038",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "49e28049816b4600b9a171023a298a50",
+      "vehicle_id": "1038",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "98e85b1b359d4fdca69782fdfb035ca2",
+      "vehicle_id": "1271",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "be69d05287564aaaa9b430e7dc027d14",
+      "vehicle_id": "1271",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "bb5099872ae742478c07a5a4265a97c8",
+      "vehicle_id": "1271",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "d55f8b9406be4ac6bcc0ccd5557cc6f0",
+      "vehicle_id": "1271",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "2ecfe75d9e1940dfa83d9d0315855d4c",
+      "vehicle_id": "1271",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "c1e6f58d80ae499aabebc74156ab67d6",
+      "vehicle_id": "1271",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "e260d43954a84c3f90743d055057e3ce",
+      "vehicle_id": "1126",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "b7c6cb79bf6048ae8e25ab4c3e8cdb3a",
+      "vehicle_id": "1126",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "138c838bce2343b29112ecd036062abd",
+      "vehicle_id": "1126",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "0380091f29324b2f8d652af12eab2f44",
+      "vehicle_id": "1126",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "9c1f058188074544aece88f99dbf56e7",
+      "vehicle_id": "1126",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "e9ffc75cbb3e41b78b3f02bfc51fc21f",
+      "vehicle_id": "1126",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "0db3eb8d6add4594aacae9b7eb615d4e",
+      "vehicle_id": "226",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "e686d0200ce043119d30bfc0e068611c",
+      "vehicle_id": "226",
+      "camera_id": "31"
+    },
+    {
+      "image_id": "c058349ed2c44c1882f638c657245e03",
+      "vehicle_id": "226",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "32b93891df7f412fa9f081eb11c3323a",
+      "vehicle_id": "226",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "7f652bf7924c4d268c01a90369a3f491",
+      "vehicle_id": "1358",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "39c9b8173784499486cd9a36d0e6b05a",
+      "vehicle_id": "1358",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "55fc517d51644e50b3f298ab3527e934",
+      "vehicle_id": "1358",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "4a9cf37cddc6454282f07ad7636f2245",
+      "vehicle_id": "1358",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "44a01d24afef4d258cc6a6adf7b632cd",
+      "vehicle_id": "1358",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "80145085568d4f51b9fb4f209ba596a9",
+      "vehicle_id": "1358",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "b27e410ae9c947eaa14996d74edc84ac",
+      "vehicle_id": "1358",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "f1376f6a18f34042a4fee498e75ff5cf",
+      "vehicle_id": "1358",
+      "camera_id": "74"
+    },
+    {
+      "image_id": "e244d59d3687472b8a3ca9c482c96a51",
+      "vehicle_id": "328",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "e40a24da40c944138b95193a43d2ef0e",
+      "vehicle_id": "328",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "1b1b411c6ecb4a08bd7c2bcf0ab4c17c",
+      "vehicle_id": "328",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "08c692c87e6f4ebeade36d9c66673db0",
+      "vehicle_id": "328",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "ca87b93a486e4c72af436861927ff6dc",
+      "vehicle_id": "328",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "0b1792be263947dfb5126e48c9273249",
+      "vehicle_id": "328",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "abc26a23a9894ed0b34b28f161958470",
+      "vehicle_id": "1111",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "c979bb0d68bd445da1068a92cdfde266",
+      "vehicle_id": "1111",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "167057c8a07e4d7eadcfd45387e05905",
+      "vehicle_id": "1111",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "0894468af2bd4951aca015d4899733d2",
+      "vehicle_id": "1111",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "f167f07c1df24ef78e22229824b490af",
+      "vehicle_id": "1111",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "edeac5260019462680d91fab862adfa9",
+      "vehicle_id": "877",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "4a5b141c1f414f68bd5aa7b43c74ef10",
+      "vehicle_id": "877",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "3e984d26d9fb4beba80dfd475b63bd10",
+      "vehicle_id": "877",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "2e0483b974c24a5cac374b3e2c6864dd",
+      "vehicle_id": "877",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "fcb6057450fc4b069638328f7ebd5fe7",
+      "vehicle_id": "877",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "f81246c10f8748c2a9657c21d883ddd0",
+      "vehicle_id": "877",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "3243224b39be4e33a273426b06602fbf",
+      "vehicle_id": "877",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "314c1df83a5440d5bde1a31b3570587b",
+      "vehicle_id": "877",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "b17fd1bfdb3e41bea6bcce4499eb424d",
+      "vehicle_id": "1464",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "ab7dfdb360ee41a29b7f0c6dab14ac66",
+      "vehicle_id": "1464",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "0d23578662464642a14d0a673e1be39a",
+      "vehicle_id": "1464",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5d86e9c7adc449718d57c9c4f861e88e",
+      "vehicle_id": "1464",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "f73f463538964aea8fc6ead34c4a31db",
+      "vehicle_id": "1464",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "420b3ea39c7c4ed9942d26282b138832",
+      "vehicle_id": "1464",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "57820d45a5dc4461aa9b891f7ee15160",
+      "vehicle_id": "624",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "bc123b2070cc4881ac144142f0836ab4",
+      "vehicle_id": "624",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "b5b201f5d7644bb0b09c17b94600544a",
+      "vehicle_id": "624",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "c380aa2b205041c491ed6f0b50f64a83",
+      "vehicle_id": "624",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "29702efc5f854a1ca8a7ef781704b004",
+      "vehicle_id": "624",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "6110be7fff5e4d6487024d05eee01cbe",
+      "vehicle_id": "624",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "f7a3dc7d41dd49d184651ed7ea38a449",
+      "vehicle_id": "37",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "82baecc3bee74283a7806634ef220b1a",
+      "vehicle_id": "37",
+      "camera_id": "16"
+    },
+    {
+      "image_id": "a1e4b335a3bf4086a40b804cfedea77d",
+      "vehicle_id": "37",
+      "camera_id": "16"
+    },
+    {
+      "image_id": "13bb0a4a4ae7430c8bfa0f6ce6b0c7ad",
+      "vehicle_id": "37",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "d143d644c57142aab4ed862669fe7f8a",
+      "vehicle_id": "37",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "5b7f83d8b1c746a995c8d70f2c2b7ba5",
+      "vehicle_id": "37",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "22188811272941f0999e3f7dc13cec94",
+      "vehicle_id": "37",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "97c1cd59ef8d43feb5caaafb196aaeb3",
+      "vehicle_id": "217",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "85d37294707b4133bd8ab6347ee33a4e",
+      "vehicle_id": "217",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "c23e88daed4642d5b2b6ecc69d6fee61",
+      "vehicle_id": "217",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "009e78d6557947a4a5a64ee598fca247",
+      "vehicle_id": "217",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "7dea319d83af4d32a8777bd4f0235750",
+      "vehicle_id": "217",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "5ef9741867d6437bad5d525ba3105e89",
+      "vehicle_id": "1520",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "3b8fc5864110444f82e94f624b583ad2",
+      "vehicle_id": "1520",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a01e5fa4daf64f188c3f8cb2832efef8",
+      "vehicle_id": "1520",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "23b465e68ad543cdb8adfb9ad4b88a34",
+      "vehicle_id": "1520",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "6d310939d98947a3bd1019c12c60ccff",
+      "vehicle_id": "1520",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "e506614ea9704cf3a61f52af164a6ca6",
+      "vehicle_id": "1520",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "94644eac928a4450b087eb7086d9c416",
+      "vehicle_id": "1520",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "b1063a3ba698493ebabf38471ccb741f",
+      "vehicle_id": "485",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "f49a5e3d176a41dcaec3ca6c16fb2aaa",
+      "vehicle_id": "485",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "9566fa2e6c2b404e8a4301424d8e333e",
+      "vehicle_id": "485",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "f51eb8efd12f49c1a9e3137970dd4ddf",
+      "vehicle_id": "485",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "a01c83af23284ed08a504f9bbf776d6a",
+      "vehicle_id": "485",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "0df22d63a5fa4086a47db6b393f45b11",
+      "vehicle_id": "1531",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "7744c96114de4414b2b995256c72dbc7",
+      "vehicle_id": "1531",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "1a0365d2cebf435b89f0da47e1a249fb",
+      "vehicle_id": "1531",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "0edecc145b6e4448ba3b257790090f8f",
+      "vehicle_id": "1531",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "59af67f063764c159d86f3464d5767b1",
+      "vehicle_id": "1531",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "071272671bcc490fbea437c7a18d3d9d",
+      "vehicle_id": "114",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "af282ecbbbd54aa3a4fa3391de07daa8",
+      "vehicle_id": "114",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "e903072a8856472c84e71a4f70b87eaf",
+      "vehicle_id": "114",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "d393f748ba0b4d5cbe194e1edc8e9ef6",
+      "vehicle_id": "114",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "00c992c0c3ee49948906a09b6a1b7464",
+      "vehicle_id": "114",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "e37b414ad9b244b79b2c7cbb2898329f",
+      "vehicle_id": "114",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "d622af90f62446e7ab6a82648a3974cb",
+      "vehicle_id": "1043",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "c77c3297127a4bababf1d186ab97b70c",
+      "vehicle_id": "1043",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "800f03870dac489993d2e7d84827f52c",
+      "vehicle_id": "1043",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "191cb46707924ef882582fd9d7712def",
+      "vehicle_id": "1043",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "df5694e7c26342c3ba779f4f29062449",
+      "vehicle_id": "1043",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "3d1b6eb30050477f9371d6531dd97d04",
+      "vehicle_id": "1043",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "eb6f580056444dec843978c5bdd3ab7c",
+      "vehicle_id": "1075",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "0ee6d6922aa64ed882742ed09c385fed",
+      "vehicle_id": "1075",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "37f9b525d6ed442bb858051b7093f445",
+      "vehicle_id": "1075",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "6245132e13a34a1791c3815b7776e0cf",
+      "vehicle_id": "1075",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "563a4f2d7f86455db1554d7d12ef4438",
+      "vehicle_id": "1075",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "de9c9a6ef97e44e78045cfffa6a94d49",
+      "vehicle_id": "1075",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "5093b5d5bacf407ea9219fe375ee60b4",
+      "vehicle_id": "1522",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "4b5b3e4291184339adf6c5b4ecb6281f",
+      "vehicle_id": "1522",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "5ce7e15b3d254cb8945f9a9a03229f41",
+      "vehicle_id": "1522",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "6e2583ee4580488393b43e6901d91514",
+      "vehicle_id": "1522",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "758f1139f2ed4841a3df943f5a70d6b2",
+      "vehicle_id": "1522",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "5a880cc95d054236b6cd31c731d5b4ed",
+      "vehicle_id": "1522",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "3a62f10411aa4a68b1be3e3355407735",
+      "vehicle_id": "1522",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "e0f977b79df64e459fa8d3a0dc675acc",
+      "vehicle_id": "1522",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "36c93433d821494cbe2391fcb39028ac",
+      "vehicle_id": "95",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "0cb730e7c5384871b4963f967f594826",
+      "vehicle_id": "95",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "83d587a99a884aec8f6f926fc8526e4b",
+      "vehicle_id": "95",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "cd633c5328fa44c98c4a6ba344c47984",
+      "vehicle_id": "95",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "973133b82c57446fa567d05c02d61e7a",
+      "vehicle_id": "95",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "46acf864f7aa4a0ea328186e5449ecd2",
+      "vehicle_id": "95",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "454c4d362f4046728eb8f2efb8af0819",
+      "vehicle_id": "257",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "8155b5e297e5496e82d757abb1ee0f6d",
+      "vehicle_id": "257",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "4b7335d0649349988f63c09ea2d1bc9c",
+      "vehicle_id": "257",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "195cd4be93764676bc3be87a018eb8f7",
+      "vehicle_id": "257",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "7bc8bb78ab924a10acc78db4952a773f",
+      "vehicle_id": "659",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "511e920655ef4d6783bd86ecd053cb91",
+      "vehicle_id": "659",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "df3b2a1623b140819eda66ca6cc33fc8",
+      "vehicle_id": "659",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "75ce6b2fc517479d8e796a08f7572928",
+      "vehicle_id": "659",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "e102af8107ed4b3b935b2f273943f902",
+      "vehicle_id": "659",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "afe4a587b8254ca7aeec75a82018a761",
+      "vehicle_id": "659",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "8e2dc12e8cd749088aa650dee13968d5",
+      "vehicle_id": "659",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "f4638c8e71d142b89dc534b3fbd9e8f0",
+      "vehicle_id": "659",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "7d0864f1756c471791cd0323556745fa",
+      "vehicle_id": "837",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "df3c8d483e6347d188f1688334610281",
+      "vehicle_id": "837",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "1fc1cd8c86ae4d5783594c0bb5cb5088",
+      "vehicle_id": "837",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "52d8b34b4a1547888a7e215a55c1ee8b",
+      "vehicle_id": "837",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "f9424cc6abb64aca910cd8476b13fc2f",
+      "vehicle_id": "837",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "59af1fc20f7647ad98eee4319ae04751",
+      "vehicle_id": "837",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "ab102283539445bbb7cad2971714623b",
+      "vehicle_id": "837",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "c07ef72e8c774c048578d639cd1d8890",
+      "vehicle_id": "837",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "cae0768c2a654e479f4613cf9783212d",
+      "vehicle_id": "224",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "aae1ddec128c4b6bad708752dc04d4d8",
+      "vehicle_id": "224",
+      "camera_id": "32"
+    },
+    {
+      "image_id": "7602b1a810094f54bee57ab14fac50de",
+      "vehicle_id": "224",
+      "camera_id": "65"
+    },
+    {
+      "image_id": "794e399485544b7f874e6fdddd88d698",
+      "vehicle_id": "224",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "8f2e73672b4042058052461e7a45be8c",
+      "vehicle_id": "224",
+      "camera_id": "45"
+    },
+    {
+      "image_id": "a890af5e587f4a8797f38372db2901a5",
+      "vehicle_id": "224",
+      "camera_id": "32"
+    },
+    {
+      "image_id": "ea565ecbd8d54cc386c492d8fdeebc96",
+      "vehicle_id": "224",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "302d758f299f40c8a5a427686f851bec",
+      "vehicle_id": "224",
+      "camera_id": "65"
+    },
+    {
+      "image_id": "2de1f43eddea4858994d542f3eb93829",
+      "vehicle_id": "421",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "4a359045262a4eccbe6c73e7500551d5",
+      "vehicle_id": "421",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "5706b99226484eb19f5d7272a752ea68",
+      "vehicle_id": "421",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "1366a14c4e744bef8dde5b15d6669c77",
+      "vehicle_id": "421",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "f5b6c063ea9c421fb8cee87547fcb976",
+      "vehicle_id": "421",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "5a24165771484608980253f9b29f3215",
+      "vehicle_id": "421",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "3f72c5f1590d42dfaa218f678ddcd999",
+      "vehicle_id": "912",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "8aa2a52a6f2d4a1fa931722f873cbe14",
+      "vehicle_id": "912",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "1219ea6c541944c8987a5b485e5d50a6",
+      "vehicle_id": "912",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "e1ae65769ea548838f4aa9ddc2ce886f",
+      "vehicle_id": "912",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "832b0cb87e944f839787ce119b9d87b5",
+      "vehicle_id": "912",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "fd89f0faa4fd46e3bd73d370fadfec8d",
+      "vehicle_id": "39",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e42834e242f14226bf08425ff0ebb236",
+      "vehicle_id": "39",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "bffd8422695a47299899bdc756d3b5a4",
+      "vehicle_id": "39",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "82b420b867264bb7ab86ece2b64964b2",
+      "vehicle_id": "39",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "300963d974c24a318e3df1804184a71e",
+      "vehicle_id": "39",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "784b85da77984d3288f33380462144c6",
+      "vehicle_id": "1251",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "49654fab1f0b43239bc17239216e52fb",
+      "vehicle_id": "1251",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "29a63a51405d4384ba62046f24e3d5f9",
+      "vehicle_id": "1251",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "aa76ea18dc554ffa922145de42a9c458",
+      "vehicle_id": "1251",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "8f356688532949f88e5427076efa9795",
+      "vehicle_id": "1251",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "87dc379e6778408c8c1f93d4657d9122",
+      "vehicle_id": "1251",
+      "camera_id": "23"
+    },
+    {
+      "image_id": "e90a5fce539e49ef8c39d2bb561f860f",
+      "vehicle_id": "54",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "3a7959c266094a82835b0bef9f2a3f25",
+      "vehicle_id": "54",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "7f38b3a546d04215a6f823a5d0b490a9",
+      "vehicle_id": "54",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "d9bf5aa78ab14f43a93cc9e91adb185c",
+      "vehicle_id": "54",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "b8f523b5011d449899d852a4c7df3910",
+      "vehicle_id": "54",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "c38621d9ee4c4a9a8de800aacd5f73e6",
+      "vehicle_id": "54",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "3422cf26af5543b5bfaefcf6c8cd70b3",
+      "vehicle_id": "1234",
+      "camera_id": "16"
+    },
+    {
+      "image_id": "51a8a71921f14cf18e59801fc479c856",
+      "vehicle_id": "1234",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "acfd1b686c8e40dbb0786cf427fcaa0e",
+      "vehicle_id": "1234",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "4ed571528d094df5b6f8e385a33b989b",
+      "vehicle_id": "1234",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "c0c1ed4e77f2498e9b8a9960449b6840",
+      "vehicle_id": "1234",
+      "camera_id": "16"
+    },
+    {
+      "image_id": "b3265ee7dc60418dac76dc6743390743",
+      "vehicle_id": "1234",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "55332f21864b46eca08c35ec5a6390d8",
+      "vehicle_id": "1234",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "d59330c200ba488a93769dbf380951ff",
+      "vehicle_id": "1234",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "c67f31886c5e443a83004bd2bbe112b0",
+      "vehicle_id": "104",
+      "camera_id": "70"
+    },
+    {
+      "image_id": "c447f51d52784835bd36435d213ff4f7",
+      "vehicle_id": "104",
+      "camera_id": "70"
+    },
+    {
+      "image_id": "7066c4f0bb67482cbe6d6dc053d6c821",
+      "vehicle_id": "104",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "91c0f134782a42cab1f8cb99e025c518",
+      "vehicle_id": "104",
+      "camera_id": "70"
+    },
+    {
+      "image_id": "c124ac18c3a44356b03be78df52fe973",
+      "vehicle_id": "1071",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a326590dfae243cca16ee8759fe8edee",
+      "vehicle_id": "1071",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "0546b58628ad454e9218e02f1d628af5",
+      "vehicle_id": "1071",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "e1aa59955b68403fa08d73db0260daf9",
+      "vehicle_id": "1071",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "bebf98094cc84744a91c661c07ba3c8a",
+      "vehicle_id": "1071",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "cff51715cc2d4b6bb1d291c6f3efdee0",
+      "vehicle_id": "1071",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "58aab10be487470eaeb8edced629eff3",
+      "vehicle_id": "526",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "0a58c1212d974624a3df64d24f618027",
+      "vehicle_id": "526",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "f65b4f0390c543f4b0da3958b82eee07",
+      "vehicle_id": "526",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "59eb946ded27436985084f598b58ffb1",
+      "vehicle_id": "526",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "dd693d79673b4de1b6b69fc58eff55e4",
+      "vehicle_id": "526",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "6498797458c244e48c3fb15675701b15",
+      "vehicle_id": "526",
+      "camera_id": "38"
+    },
+    {
+      "image_id": "ff5cf69ad4da41988b5f5ec3fc430cb6",
+      "vehicle_id": "847",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "8ba476c835b243448d0b4f965ab3d2bc",
+      "vehicle_id": "847",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "354f24a8c28541cd8ee72094685b5316",
+      "vehicle_id": "847",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "7ac0de82d5264f59a791eac307efc6d5",
+      "vehicle_id": "847",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "8b330ec00ba74aaeb69f6fbf54c3d483",
+      "vehicle_id": "1375",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "36d84b038c414789be5c538ae84ed53a",
+      "vehicle_id": "1375",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "26ab9040966048eb8cd968683c2bd5e9",
+      "vehicle_id": "1375",
+      "camera_id": "29"
+    },
+    {
+      "image_id": "38a281c135bc4c649cd79a49a946aff8",
+      "vehicle_id": "1375",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "039cbf619f5e48d2a42aee27984db52e",
+      "vehicle_id": "1375",
+      "camera_id": "29"
+    },
+    {
+      "image_id": "598873f876f8435eb1bb3c53088560c0",
+      "vehicle_id": "756",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "3b5ce3d53b0c423bb7b504c7b9ab0862",
+      "vehicle_id": "756",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "23f7d5e5479140709f0a2d2776faba8c",
+      "vehicle_id": "756",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "f2824f3431ac46c1b9259ce8b8ebde99",
+      "vehicle_id": "756",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "4d3437f3913e4f6fab21182453c9987a",
+      "vehicle_id": "756",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "55841f4238e942a68bec2d9400ab9633",
+      "vehicle_id": "756",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "dbdce53e3585409bbb0115362d235add",
+      "vehicle_id": "929",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "1863109a9bf94efa89324c4f3bb22aa7",
+      "vehicle_id": "929",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "20df4c2c09dd431a952313ab01c415ee",
+      "vehicle_id": "929",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "1c1d2c8402344119bd4e8ecff1cafdc1",
+      "vehicle_id": "929",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "bb4b75e8180847979f64f6706b20cfe2",
+      "vehicle_id": "929",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "0b332766c60d4613afaf13720f54b1f7",
+      "vehicle_id": "764",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "f7b63c3a89aa4ea9b8ba6b24383d5389",
+      "vehicle_id": "764",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "63a770bcfe3248e88e08e2368fd2e37b",
+      "vehicle_id": "764",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "6c02ec9bd16a4bc0a884d51622e5a496",
+      "vehicle_id": "764",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "946112b62a4741b6a96ad68f31768be8",
+      "vehicle_id": "764",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "efb256892bd342bdb8e49c7e47fdddb8",
+      "vehicle_id": "764",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "2e372f399c824622b20528b660f6ca9f",
+      "vehicle_id": "764",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "746d00eb787c4bee91edd0e4c6fd7ab7",
+      "vehicle_id": "764",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "c76b30757dc84b72b63d5bda341e45f0",
+      "vehicle_id": "977",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "18ef9a6f48d44828ad82b181fce8b20a",
+      "vehicle_id": "977",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "8aa48fe707fa404e9d921a9b2c0472d7",
+      "vehicle_id": "977",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "06c0f6c29afa4131a344a79623a2ffba",
+      "vehicle_id": "977",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "cda91988566f4860a294435245681324",
+      "vehicle_id": "977",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "bbbd2877ec35468689b5fee3585333e7",
+      "vehicle_id": "977",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "94945598ed5d4204be76594b932b1695",
+      "vehicle_id": "816",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "509c9df9dfcb4509a5676437750ce388",
+      "vehicle_id": "816",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "9176ef255fb8461abf0f72d07d87a267",
+      "vehicle_id": "816",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "c95ff4142b264b93b2d13692a66e074b",
+      "vehicle_id": "816",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "5489c5f6e7394ce9a53d892d3fa0fc75",
+      "vehicle_id": "816",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "e4d3adf2be5e40ca89d017fac2f6a5e2",
+      "vehicle_id": "816",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "b08c42632c1b46abb523f53665b0604e",
+      "vehicle_id": "923",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "af0398c393b84f449392d00d4bdfeab2",
+      "vehicle_id": "923",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "842e97350e014534be291a3beecadd3d",
+      "vehicle_id": "923",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "120c9a9cd413427dab54c65c16e491da",
+      "vehicle_id": "923",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "ecec80efbd9e42b9bb4c319d942a0dfe",
+      "vehicle_id": "923",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "f58426ea50a84c20ba9281497f4fc757",
+      "vehicle_id": "923",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "478fc1346ca249ccacc620e431f8763a",
+      "vehicle_id": "995",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "4ffeef0e01764ff2bab595851ff86ae5",
+      "vehicle_id": "995",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "c791a4b1054f44ca9243dd66c9eabc5f",
+      "vehicle_id": "995",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "2c6fcd6400774022abe11abd97452029",
+      "vehicle_id": "995",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "342488bec88b4580b75adc67df2e5800",
+      "vehicle_id": "995",
+      "camera_id": "64"
+    },
+    {
+      "image_id": "7b853d25fa28459081ba6cd4dd78d746",
+      "vehicle_id": "995",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "f18ab39ae20d4379ba65743e95264cee",
+      "vehicle_id": "116",
+      "camera_id": "72"
+    },
+    {
+      "image_id": "15688fbde4284f0f9a4bc54f3a04a4cd",
+      "vehicle_id": "116",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "ea35c34c61984d62a3c886c3df76853c",
+      "vehicle_id": "116",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "9aef4ff8b419400bb51a01fef6c818ee",
+      "vehicle_id": "116",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "639d396c1c584671a79eec69f735bf8e",
+      "vehicle_id": "116",
+      "camera_id": "29"
+    },
+    {
+      "image_id": "1465b23cb552455897f6800e8a6d0e1b",
+      "vehicle_id": "107",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "49bba56f920147debeafbee5e60325df",
+      "vehicle_id": "107",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "fd8b7c00b7364d6eab1d098263d96711",
+      "vehicle_id": "107",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "050fb43ab4bb40a49434d3df0a9c2b2e",
+      "vehicle_id": "107",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "0eb5d1b856c141d194cb02cce9c4e2c4",
+      "vehicle_id": "107",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "7812891aad434287869e8f05bfe988f9",
+      "vehicle_id": "107",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "d4f59fa70301442d86425bb9990e46bf",
+      "vehicle_id": "111",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "938055674a334b8f86650d5313b30b3d",
+      "vehicle_id": "111",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5b95b33ecfab439998b34138562c68ae",
+      "vehicle_id": "111",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "725a82ce9aee47c2bca5c2679ad15079",
+      "vehicle_id": "111",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "c2acbd4ae8c64cd99d847e50e1f1a078",
+      "vehicle_id": "111",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "a76417e515164243a58d20727e5244c3",
+      "vehicle_id": "111",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "ad80f66d30764540bed073420b8d616e",
+      "vehicle_id": "637",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "e1661b44675d4c278ef8a232801ebbf2",
+      "vehicle_id": "637",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "cb20a630853d405d87d678a60847b0a0",
+      "vehicle_id": "637",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "93a6a46638dc4aa089cfb8ce0cd89e62",
+      "vehicle_id": "637",
+      "camera_id": "0"
+    },
+    {
+      "image_id": "05e5faa9142246d397ff2b8dd6ab76b8",
+      "vehicle_id": "637",
+      "camera_id": "79"
+    },
+    {
+      "image_id": "3c31429151dc491fb6ba6609574c9943",
+      "vehicle_id": "637",
+      "camera_id": "70"
+    },
+    {
+      "image_id": "354c6bfa38a24357a3166cfa84f513b1",
+      "vehicle_id": "637",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "35bfa58105594af4821b338bde905dc7",
+      "vehicle_id": "1326",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "7b7d8aeeac5a485189f18263966c3139",
+      "vehicle_id": "1326",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "3a70e0e4d14c4d3f86f4ac76b2233104",
+      "vehicle_id": "1326",
+      "camera_id": "32"
+    },
+    {
+      "image_id": "4e352a9bf0114f28b02aecc5b340fbc2",
+      "vehicle_id": "1326",
+      "camera_id": "21"
+    },
+    {
+      "image_id": "1a64073d76914911b9f4fefe3e5e518b",
+      "vehicle_id": "1326",
+      "camera_id": "22"
+    },
+    {
+      "image_id": "525fa5c9104348c6a78acc5c3e1da717",
+      "vehicle_id": "1326",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "7d4a9dfc10b94868a3c17247a75e2027",
+      "vehicle_id": "966",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "1571cb26f7f645aabdad9656fed4135f",
+      "vehicle_id": "966",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "80ae4d7f56a142d88c95fda7cb9b9d5b",
+      "vehicle_id": "966",
+      "camera_id": "41"
+    },
+    {
+      "image_id": "58c9cacc3fbf427e9adc8b34bc7ed243",
+      "vehicle_id": "966",
+      "camera_id": "41"
+    },
+    {
+      "image_id": "dc8579d65d1641dfa8e69ae778299c6f",
+      "vehicle_id": "966",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "3b6b65464aad4c869825b9ca0c06bf49",
+      "vehicle_id": "966",
+      "camera_id": "9"
+    },
+    {
+      "image_id": "7604df1f1bb447c491dd537036552c68",
+      "vehicle_id": "861",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "aef56600b4134045b03eceecd5c321af",
+      "vehicle_id": "861",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "459ea82d9e2744d084b124446b29e80e",
+      "vehicle_id": "861",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "394b80854a76420c89e60fc851496572",
+      "vehicle_id": "861",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "7eb83b1dc8c14c928924d913196cfad8",
+      "vehicle_id": "861",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "b561741f64d94c5d94081b6c41633d74",
+      "vehicle_id": "861",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "6b2aa378d6074e82ab35cd6c1e7148ab",
+      "vehicle_id": "67",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "6c78bc024a4f48939f346c67f8253b62",
+      "vehicle_id": "67",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "505e86e3b0f64d4f9150e6d4123b5035",
+      "vehicle_id": "67",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "1a730c6747054be2a8dcbfa49dc58422",
+      "vehicle_id": "67",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "19472f835fa747dc9c352cefcd8c8df3",
+      "vehicle_id": "67",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "7cab0ca30ba7404091cd97424839b05b",
+      "vehicle_id": "67",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "1ee0c3dbbcc6426d97290988799ee735",
+      "vehicle_id": "267",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "bf17987b15d44a0daf12691c10f5d1aa",
+      "vehicle_id": "267",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "eb32ca278df1482198dcc6c9e33b19be",
+      "vehicle_id": "267",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "ed90c9732ed34546a0a5616d2ae1f3de",
+      "vehicle_id": "267",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "2919318807404a7da0a16a3ea593da97",
+      "vehicle_id": "267",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "19fdabd2420247379741d197e6e7c4ad",
+      "vehicle_id": "267",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "87d8d257a796428ea72c1c3e10338333",
+      "vehicle_id": "261",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "1d78ea6d08df417ca2adb31e9692b718",
+      "vehicle_id": "261",
+      "camera_id": "3"
+    },
+    {
+      "image_id": "bd6aa9ee62364338ae5484446ef49329",
+      "vehicle_id": "261",
+      "camera_id": "52"
+    },
+    {
+      "image_id": "79485da8d58042cdb1caba493c46ca40",
+      "vehicle_id": "261",
+      "camera_id": "52"
+    },
+    {
+      "image_id": "a7c0664adfae42749b32f09b65fcfd89",
+      "vehicle_id": "261",
+      "camera_id": "3"
+    },
+    {
+      "image_id": "525230fe4d4644f08a1a8b8c35e82fb3",
+      "vehicle_id": "261",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "19c7531a4fbf48fe8594ef042d3e5d02",
+      "vehicle_id": "261",
+      "camera_id": "3"
+    },
+    {
+      "image_id": "991e3f8294e34494897db3c83bccb041",
+      "vehicle_id": "625",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "5a4df13cd72a44469920e4727e4e06d9",
+      "vehicle_id": "625",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "1ca1702da7ae498fbb5901e1e539b0e5",
+      "vehicle_id": "625",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "8b7ddedc6ec5494da321ad702bceefe3",
+      "vehicle_id": "625",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "79ae68871e5c48f4a3a02ce9d4198bd0",
+      "vehicle_id": "625",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "7ee68d042dfc49b6b7aa28ace7ea3fbb",
+      "vehicle_id": "625",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "e56f72c340a9446ca8e51b802091d7b0",
+      "vehicle_id": "625",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "e9d04825c0954174a95bddb72c1fb245",
+      "vehicle_id": "1301",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "3f1fbc96674a41b0aca41105ea5b8126",
+      "vehicle_id": "1301",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "01faece14ba64a0f83604288e546e58d",
+      "vehicle_id": "1301",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "a14a30610ad2448b939def55e97cae28",
+      "vehicle_id": "1301",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "c42c3e2bd5234165b1a3096189c13111",
+      "vehicle_id": "1301",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "3de07c7e2f77491c9c33b14dd21703e7",
+      "vehicle_id": "1301",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "eb274b31408a4bb7b8b28e6ba6f965ca",
+      "vehicle_id": "906",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "3f08c4c423984cd39aab187578f33228",
+      "vehicle_id": "906",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "a9f72e6fffca46898314706c1f5bf833",
+      "vehicle_id": "906",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "714d0ec5fa5c4c54b34dc3ca8ae80868",
+      "vehicle_id": "906",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "2e735fa9951a46d9a01826761cf987b3",
+      "vehicle_id": "906",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "c276484f0cdb4e2ca94276716985aa22",
+      "vehicle_id": "906",
+      "camera_id": "20"
+    },
+    {
+      "image_id": "531aa1d972a94f9180849edb46fd9dad",
+      "vehicle_id": "906",
+      "camera_id": "57"
+    },
+    {
+      "image_id": "d71a83c6cd634fb9ac9b9ddcec30e4f4",
+      "vehicle_id": "906",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "1df655160bce48ec96909eb1b2de560b",
+      "vehicle_id": "1204",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e2e37fe3b48d4ad398912c5679f75e45",
+      "vehicle_id": "1204",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "6eddd7c5f67d45e2bed3d9cf25ba2793",
+      "vehicle_id": "1204",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "e9f66f92006248b486e7e75bd714a05d",
+      "vehicle_id": "1204",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "082c884ac15d4e53aaf330666b5f2de9",
+      "vehicle_id": "1204",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e2c359e3467e466bba59de357c5054a6",
+      "vehicle_id": "1204",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "45b346e5d661417da56ce2e7ed28afb6",
+      "vehicle_id": "968",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "3923e495d10940e59c9dc28e385058e7",
+      "vehicle_id": "968",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "3df1d991e88a4be694289792a93ab00e",
+      "vehicle_id": "968",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "2a776116956d49f7be17fe3aaf27fee2",
+      "vehicle_id": "968",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "803d1ba5219a4cf99de2ceb339d7d4c8",
+      "vehicle_id": "968",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "3d1befda3ee34df5b4e27c1fd90a20c9",
+      "vehicle_id": "968",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "fabd7b13569f4a04aac8e8ba6c0bb92f",
+      "vehicle_id": "968",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "2d76408700624c738bc5fdd277d9168b",
+      "vehicle_id": "968",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "c61e1e592570487088074cef60fbc753",
+      "vehicle_id": "1371",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "78a628d099b8413eb30babae542a6bbe",
+      "vehicle_id": "1371",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "473212fb140a4e38ae84255e4b18746a",
+      "vehicle_id": "1371",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "699e13d9a3f84d34a09edb302a900a37",
+      "vehicle_id": "1371",
+      "camera_id": "35"
+    },
+    {
+      "image_id": "e9a1ec77f2b247ec92bb1650e61554e3",
+      "vehicle_id": "1371",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "66445f56f77d4b21a8fd08d3bc1d5479",
+      "vehicle_id": "1371",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "af87f45ea06e4291b50ed40381eccdf9",
+      "vehicle_id": "1121",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b15f909856b141f6b1b767de9d3c3578",
+      "vehicle_id": "1121",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "2a353c6ae43b4b99a46da2451024beff",
+      "vehicle_id": "1121",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "6585bf0fd7c54f9ea5d289ec7540e506",
+      "vehicle_id": "1121",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "15828b22d85a4c638a09b0f90487387b",
+      "vehicle_id": "1121",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "56a2c05bfd084a8eb1fe99a58ff6ddc6",
+      "vehicle_id": "1121",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "b4493518a7654d2fb2c3411ac6d3ec19",
+      "vehicle_id": "1121",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "c149bb9deea64c22b03954cf4ec4cd73",
+      "vehicle_id": "1121",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "47a4d333f248429a8b4b7bbd2d812a41",
+      "vehicle_id": "1113",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "b0bffbecdb9b4b96a884f11f01b0f9a8",
+      "vehicle_id": "1113",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "5593d56323674f75a74b1314cbb56849",
+      "vehicle_id": "1113",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "f27ea8a28da64e8abd2acb014d8d69a9",
+      "vehicle_id": "1113",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "1b8f6649ae4a4dd1b3544c9657000631",
+      "vehicle_id": "1113",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "31a16fe088b847678d1f99cc68869daa",
+      "vehicle_id": "1113",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "71bd486c2b45487a95e9c84025c719c0",
+      "vehicle_id": "1012",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "734d77c711414df19b27de7a81627789",
+      "vehicle_id": "1012",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "ba16eca1d8904d698b6adf9e5e9fff24",
+      "vehicle_id": "1012",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "6628305f060e4397bed3e2bd0be907d5",
+      "vehicle_id": "1012",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "c96505f7ed6f416494271e7716a303c4",
+      "vehicle_id": "1012",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "af276674a347419e97d484612958e55d",
+      "vehicle_id": "1012",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "2d807a07106d4da8a7748653d8c03eeb",
+      "vehicle_id": "828",
+      "camera_id": "32"
+    },
+    {
+      "image_id": "830fb85ba18b4fb3a74d09884ba6b0b5",
+      "vehicle_id": "828",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "888a0f4d19ae43c280df3f34ffae91ff",
+      "vehicle_id": "828",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "f50b979a8dc74d17824afb635a59bb24",
+      "vehicle_id": "828",
+      "camera_id": "32"
+    },
+    {
+      "image_id": "9939ec3b671047dba41537a1578174c8",
+      "vehicle_id": "828",
+      "camera_id": "32"
+    },
+    {
+      "image_id": "32b6040583834a2a85098dc0182820ba",
+      "vehicle_id": "828",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "571a40b4982f41be89b29e36f4e3dc39",
+      "vehicle_id": "655",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "3151a28bad064f78850438426b2a9b00",
+      "vehicle_id": "655",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "6d1c4e30d9514f65a2d1ebfd789d26d6",
+      "vehicle_id": "655",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "e4ed38ea65074afd9168eb0f0f57bf59",
+      "vehicle_id": "655",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "fd697349ed744dc48eda3a3b4a926664",
+      "vehicle_id": "1405",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "e71921d0361346dcbcb4ba11f449686b",
+      "vehicle_id": "1405",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "3f721c14eeb143b8bab97cfba211aa15",
+      "vehicle_id": "1405",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "35856d831286420ea1973cae7a9fe256",
+      "vehicle_id": "1405",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "d100a098869548bca2ad4a9cf3d562c6",
+      "vehicle_id": "1405",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "f1887418fda04dbca9f8c461e8e2d648",
+      "vehicle_id": "1405",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "01c6654b1e854717a12be47934bf382c",
+      "vehicle_id": "1405",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "87e060dff8e943a89510c9ddd2498a24",
+      "vehicle_id": "1405",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "ce6d9045474541128c3396a54c6f2360",
+      "vehicle_id": "1524",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "3f0eaa69495845d2ab32fede86a0bdc7",
+      "vehicle_id": "1524",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "7e9d581d78f142cf83c68ec27b06257b",
+      "vehicle_id": "1524",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "86e7814bf4a84c7e8b792961f4ef6c02",
+      "vehicle_id": "1524",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "766ba87f4d544233821535f9ec7dc6de",
+      "vehicle_id": "1524",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "d89f38c8f0f0415daf4c9653190adac9",
+      "vehicle_id": "1524",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "9e55842aeb96479b9a83da5c637bbfb0",
+      "vehicle_id": "1524",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "b91df38d4cba4a008a32af7ac11fdb1a",
+      "vehicle_id": "1524",
+      "camera_id": "56"
+    },
+    {
+      "image_id": "0af5ac6064a04fb19e6d1a26e4468fec",
+      "vehicle_id": "316",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "b510497f1ee54d40b3e0cf82da298956",
+      "vehicle_id": "316",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "bc57b6af24de4478868b3caceb8a34d5",
+      "vehicle_id": "316",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "69a43c52a55a47a499a9f04a53be0e89",
+      "vehicle_id": "316",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "9e13860ffbad46e1ad368d03bcf57a67",
+      "vehicle_id": "316",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "aa16c59443824067815d1ca6013f7ac8",
+      "vehicle_id": "316",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "97be900ce2db4d719ae96f7155647098",
+      "vehicle_id": "281",
+      "camera_id": "62"
+    },
+    {
+      "image_id": "d2ef91c239b642da91bd037587ad2084",
+      "vehicle_id": "281",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "64e3ec9a117f49c2b212bb2b521a37d8",
+      "vehicle_id": "281",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "2082905c030547a9be36f3774226d647",
+      "vehicle_id": "281",
+      "camera_id": "1"
+    },
+    {
+      "image_id": "e1cb7daa87a44fcf8d4476c6821e6895",
+      "vehicle_id": "587",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e548240d54984642a5257e37dbc41e93",
+      "vehicle_id": "587",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "1ce63df1f04e45e5be3d086ac88753c9",
+      "vehicle_id": "587",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "f1d3e8588ea147089367d9c6a0eb5620",
+      "vehicle_id": "587",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "abecc41135b043b1a0bda9fcb3115de8",
+      "vehicle_id": "587",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "63b03f9bf1f9437f9e91443cd9e70064",
+      "vehicle_id": "587",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "c3c21161fde44b23a11d9ea42fc3fb0e",
+      "vehicle_id": "896",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "355f48fac959433bbdafb603f460efb7",
+      "vehicle_id": "896",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "a13a9a740fe24d8fbc43dccbcc9aa6fd",
+      "vehicle_id": "896",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "29d17bf7e2d047239e25564afb46ae01",
+      "vehicle_id": "896",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "b7c5d7f02658408bb5037adac49d0580",
+      "vehicle_id": "896",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "7386906764da44f88db3329bc411100b",
+      "vehicle_id": "96",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "5e486ca08d92477a9d7d6601a3832ce6",
+      "vehicle_id": "96",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "b068d6ccbfce4f29be5def9844feb936",
+      "vehicle_id": "96",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "7eca6e0496734bdb93c54fdb26f29ed7",
+      "vehicle_id": "96",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "c1cbb26d43c548ce9a4d8e5e43e2b66c",
+      "vehicle_id": "96",
+      "camera_id": "18"
+    },
+    {
+      "image_id": "56aebc1ad0714f04bf89f5b1bf6a07d6",
+      "vehicle_id": "96",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "ed391895f64d4eb78c21040fddef8f41",
+      "vehicle_id": "96",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "0cff224867d74186abb65eaf906c6254",
+      "vehicle_id": "96",
+      "camera_id": "67"
+    },
+    {
+      "image_id": "90a266844d1b4666abbfb0662492a883",
+      "vehicle_id": "885",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "d287152b34384fc7a84c8096023a6b60",
+      "vehicle_id": "885",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "511c64e363414eae8834d419e4cf9a61",
+      "vehicle_id": "885",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "d9419b4e82a0490b913458da61a92999",
+      "vehicle_id": "885",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "405cfbcdbdfc4f90a27fd96c1a0ab3d0",
+      "vehicle_id": "885",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "4b6223cc051743c49641c335f967b25f",
+      "vehicle_id": "885",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "e12b9f9b0a5d4ad3a173f78e2afe7965",
+      "vehicle_id": "885",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "f739ef90ed234a8e959107e5e57c2014",
+      "vehicle_id": "885",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "d369f32b9dd74d31ba97bf6edc3925da",
+      "vehicle_id": "945",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "518918bb784240d4a9c22b1372a5556c",
+      "vehicle_id": "945",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "1c14a75cde0f4b5286ce3f66af875c8a",
+      "vehicle_id": "945",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5d729664ad8b4423a5c3dc888757b2c8",
+      "vehicle_id": "945",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "e3c23b011efd4822a09b0f80dda23c70",
+      "vehicle_id": "945",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "7bcc7bbb62e74970ae51ca9d986e7d1d",
+      "vehicle_id": "945",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "69b952becc544233a68a9f5570668fb6",
+      "vehicle_id": "784",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "6f15adb3e45b405bbcd5aad00e54229a",
+      "vehicle_id": "784",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "eae412f15b644430ad0822f57b6b740a",
+      "vehicle_id": "784",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "34bd2a512c104243bd9bb8c05bcca1ed",
+      "vehicle_id": "784",
+      "camera_id": "44"
+    },
+    {
+      "image_id": "ae2bbada74a24390b2273984123f686e",
+      "vehicle_id": "784",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "d80c87bb0ac840f2bf239c0d4c7bf735",
+      "vehicle_id": "784",
+      "camera_id": "61"
+    },
+    {
+      "image_id": "c7cb6efd91944b2f8cda4fc888b2a7ba",
+      "vehicle_id": "967",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "2223367bff1d4237a34212ee3df0f0df",
+      "vehicle_id": "967",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "4a0c76c444774527adc1d21491aacc98",
+      "vehicle_id": "967",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5d7504e919c04f29843ea03bc6a4021d",
+      "vehicle_id": "967",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "8f28abd7a6104e9d84068eb01ea04363",
+      "vehicle_id": "967",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "ae226303a6ec412e9d259af1ae21ed15",
+      "vehicle_id": "967",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "2f4b075d4cc34cea9d6e72298ff9c724",
+      "vehicle_id": "1440",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a4a2e7e3db574392b6bb92410d4e2d80",
+      "vehicle_id": "1440",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "5e4f98bd9b21453bb2c5450f9292eeee",
+      "vehicle_id": "1440",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "da6d2e7a07794d48947c0c58f6e28fe7",
+      "vehicle_id": "1440",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "a6b6667ac6d346669f15daf0d23438ab",
+      "vehicle_id": "1440",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e71e4da90a264d8db281b2840ae8639f",
+      "vehicle_id": "1440",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "dd9226f06a0343fa8cdfe208f103689f",
+      "vehicle_id": "1331",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "107f27bf1e1945169726afab00212aec",
+      "vehicle_id": "1331",
+      "camera_id": "10"
+    },
+    {
+      "image_id": "e80e07a6650741389671bd7e3f517739",
+      "vehicle_id": "1331",
+      "camera_id": "52"
+    },
+    {
+      "image_id": "7dec0d8ab54145149650dc93fe035512",
+      "vehicle_id": "1331",
+      "camera_id": "54"
+    },
+    {
+      "image_id": "2f15ea8a4a864fea8cfd40458c4c4514",
+      "vehicle_id": "1331",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "be40dd0c96964b329d28f2c7d2eb7881",
+      "vehicle_id": "142",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "21b6fb5a068a4b6c962c13715a451e12",
+      "vehicle_id": "142",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "53ec57522d4d4bf28612c4c79bf3464e",
+      "vehicle_id": "142",
+      "camera_id": "12"
+    },
+    {
+      "image_id": "2999ae8e23bc4019995583daf6b1df92",
+      "vehicle_id": "142",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "e92164bd412349b9b7a7a187bbed63db",
+      "vehicle_id": "204",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "8b5ad8690a3e45cfbfd87b17fd03bb04",
+      "vehicle_id": "204",
+      "camera_id": "93"
+    },
+    {
+      "image_id": "26eb604790a845558a8c880ed00815e7",
+      "vehicle_id": "204",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "bea4da23d8a842938db17e0c5dc1b290",
+      "vehicle_id": "204",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "e1b047c96c8a4b6684b6f39884fe8f98",
+      "vehicle_id": "715",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "4fa5a0744fde4aea98508a36978e61dd",
+      "vehicle_id": "715",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "6ac8ac61aed84e4ba97a9a773b2b588b",
+      "vehicle_id": "715",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "be91785b252a47d7bf836c94b765491b",
+      "vehicle_id": "715",
+      "camera_id": "58"
+    },
+    {
+      "image_id": "a0d94f0355364f919d3a9cdb82c3bd8a",
+      "vehicle_id": "715",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "d991376a19334faaba408235f0d7858e",
+      "vehicle_id": "715",
+      "camera_id": "58"
+    },
+    {
+      "image_id": "03ded34d4cd04eb2ab75221c2d30f307",
+      "vehicle_id": "715",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "1d38247d47734edca662e7fcf6242093",
+      "vehicle_id": "715",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "5dea7a5e1f1e4b33b3779cb5986ed2bb",
+      "vehicle_id": "1134",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "50fc0eb6f00445958bb8f2b1a906775d",
+      "vehicle_id": "1134",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "26936a85f7dc4832ae8b2e6d526f22b5",
+      "vehicle_id": "1134",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "c76087a11fb84c1f9fc939a8026a7c79",
+      "vehicle_id": "1134",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "22af3deec06e4b39848b43cddd8d59a0",
+      "vehicle_id": "1134",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "7f1ad4718355453cbb7a71215bd202c3",
+      "vehicle_id": "1134",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "76e52957efde4ec781064448e38c9d76",
+      "vehicle_id": "1134",
+      "camera_id": "78"
+    },
+    {
+      "image_id": "bc2d0085b42d4be0ae5b9a640934a575",
+      "vehicle_id": "1134",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "f11a5e33b9b84bd6b1901f99448c6c03",
+      "vehicle_id": "1481",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "6bd0ca46f9334ef5a3a1fbe01c797af0",
+      "vehicle_id": "1481",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "75d99cef4f384abc885c0dabc22d86d7",
+      "vehicle_id": "1481",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "99a7f08abba544738fdde45d8f929821",
+      "vehicle_id": "1481",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "91369ffddb7b409fb241a29e45328cd2",
+      "vehicle_id": "1481",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "b167c9da9e3b4a7b9ebbc648510e0cd5",
+      "vehicle_id": "1481",
+      "camera_id": "15"
+    },
+    {
+      "image_id": "b4275445a0654734a0f49074e9c02cd8",
+      "vehicle_id": "1072",
+      "camera_id": "11"
+    },
+    {
+      "image_id": "b6701fb8fc684c099c6a8c8a00c6257d",
+      "vehicle_id": "1072",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "8a0d96a0a3774936b7186abf4e70609b",
+      "vehicle_id": "1072",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "796f2c4a8e8f404991bbedcba3b90a35",
+      "vehicle_id": "1072",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "2ad0af9968b443c49e0f082780ed02f6",
+      "vehicle_id": "1072",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "9c377baf28174f949fa4caa5c386f062",
+      "vehicle_id": "1072",
+      "camera_id": "28"
+    },
+    {
+      "image_id": "9d4e7b2b50ab448ba4962539a47201b0",
+      "vehicle_id": "1072",
+      "camera_id": "77"
+    },
+    {
+      "image_id": "a6df6bc285f1405f9276176d8ddd2818",
+      "vehicle_id": "1072",
+      "camera_id": "94"
+    },
+    {
+      "image_id": "f980854ccc074990b6280821bbcf8cb4",
+      "vehicle_id": "859",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "78d58d5f483e4d6eb2ff98e48d853a00",
+      "vehicle_id": "859",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "5978a8d24bf34899968e435b77850840",
+      "vehicle_id": "859",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "3ffcf6973eaa469fb8676b179ce12001",
+      "vehicle_id": "859",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "161d1b7ab93c4508bc33cf4e7833e990",
+      "vehicle_id": "859",
+      "camera_id": "13"
+    },
+    {
+      "image_id": "6e64314aebc841fcb7ebe3c29f36dbac",
+      "vehicle_id": "859",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "9b5884f51d96457081c4cfeae7380df4",
+      "vehicle_id": "931",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "f4e145e0fb3443e9be9eb71a4b2bf89b",
+      "vehicle_id": "931",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "482eeeff627a45b482af3482f8cd1998",
+      "vehicle_id": "931",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "5d56ece3870b49138abb6415c7c41299",
+      "vehicle_id": "931",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "5f235239ae7b4af6801b068c5e3fa383",
+      "vehicle_id": "931",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "07a949b6306d4d0194b827af1f329a34",
+      "vehicle_id": "931",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "e6f3b617533849ae98a91a7fcab9fa8b",
+      "vehicle_id": "666",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "cfcddff5376443d5b0c607c285b266c5",
+      "vehicle_id": "666",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "b31cd8d1ca0743c6a5cb7b7c91154a97",
+      "vehicle_id": "666",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "9502893af7fe45d8913d5effa606047c",
+      "vehicle_id": "666",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "5d32da16a2d847399180e48cacfd1b98",
+      "vehicle_id": "1151",
+      "camera_id": "55"
+    },
+    {
+      "image_id": "cfa4e7ca52834f4687f26c253363ec38",
+      "vehicle_id": "1151",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "a2930e8797d54229a161d5f66f633211",
+      "vehicle_id": "1151",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "1ca532c212074d459fc10863840e7571",
+      "vehicle_id": "1151",
+      "camera_id": "55"
+    },
+    {
+      "image_id": "74d491c66df0454389db3346b97bdf95",
+      "vehicle_id": "1151",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "bc7e172052824d9fae297a6ca6f83059",
+      "vehicle_id": "1151",
+      "camera_id": "86"
+    },
+    {
+      "image_id": "c45b7b9a34aa46b4b569fa59f3e1b1cd",
+      "vehicle_id": "1151",
+      "camera_id": "55"
+    },
+    {
+      "image_id": "3113a932c7e04bd89f012bb1401dd90f",
+      "vehicle_id": "1151",
+      "camera_id": "17"
+    },
+    {
+      "image_id": "59bcdb016b244569bace9969a1a6f2d4",
+      "vehicle_id": "957",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "da904bedd92d433db6d19f2010c56e82",
+      "vehicle_id": "957",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "2583aa8503ca45b4b105e4b0974d423d",
+      "vehicle_id": "957",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "13a9ef98532b4b5088e9e408c9eedd35",
+      "vehicle_id": "957",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "507843ed09754f6da00da29e990b24d7",
+      "vehicle_id": "957",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "246645bcebf047f2a51dfed044b78827",
+      "vehicle_id": "957",
+      "camera_id": "53"
+    },
+    {
+      "image_id": "03113fef82644d0aa3fa26709c291f5c",
+      "vehicle_id": "957",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "99ca4f805525482584e975466324012c",
+      "vehicle_id": "957",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "ffc584909c944221adad96a1ac7f959b",
+      "vehicle_id": "215",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "474e06e4e1764ba48999e083664a48a5",
+      "vehicle_id": "215",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "7c9bf26fcae349eebbe07e81b24aedd1",
+      "vehicle_id": "215",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "cf8fa68747d44a33ba8b0908bea50ad6",
+      "vehicle_id": "215",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "55920865513e4e16a79e7a898d6e480f",
+      "vehicle_id": "215",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "23c5eaa4779a465695bbc99e8bcad454",
+      "vehicle_id": "1495",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "6eb2317535214f15b8b6a6b76db681d7",
+      "vehicle_id": "1495",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "278d619cae2842e09a862df8d9327ffc",
+      "vehicle_id": "1495",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "322bb48c1a3a491798b11b96f1534300",
+      "vehicle_id": "1495",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "15a74b07869e440b89fdd7197381333e",
+      "vehicle_id": "1495",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "f25b596722ac4f72942d5db8d004ef1d",
+      "vehicle_id": "1495",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "a3e9422997fd4d9b997953455a79b089",
+      "vehicle_id": "575",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "0fd6589c8e0348ff99affeb2ec998c35",
+      "vehicle_id": "575",
+      "camera_id": "70"
+    },
+    {
+      "image_id": "aedae3883fac42aaba01be04084a4819",
+      "vehicle_id": "575",
+      "camera_id": "70"
+    },
+    {
+      "image_id": "031a81ea2f05400fb7094702fe2fecdb",
+      "vehicle_id": "575",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "5eefe12ae7ee449fae24179422630327",
+      "vehicle_id": "575",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "5f991434149549958bfb8235e2adc523",
+      "vehicle_id": "575",
+      "camera_id": "48"
+    },
+    {
+      "image_id": "214f99628b214c2ebfb8a14fc5cfbcd5",
+      "vehicle_id": "575",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "60eb1d68dd20402397fb9f3bef3f8ea0",
+      "vehicle_id": "575",
+      "camera_id": "68"
+    },
+    {
+      "image_id": "686a4c081d414dee9905400ae4cf3a95",
+      "vehicle_id": "671",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "5a4fe9d789f04260ab666c72ff0297af",
+      "vehicle_id": "671",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "b8437837769b4fbf93b4fb6114e85df0",
+      "vehicle_id": "671",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "f33e7efaa4204226bf083c0f47cc36fb",
+      "vehicle_id": "671",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "654de7ff283c4c1e85b43b64367df1e3",
+      "vehicle_id": "671",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "8e65ebea2b854191a610abb67eb4a181",
+      "vehicle_id": "671",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5b939fec149c4b5cb3d55dc2ae9fcca7",
+      "vehicle_id": "1319",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "fcf5128bd50e49b2986108855ca4b37e",
+      "vehicle_id": "1319",
+      "camera_id": "27"
+    },
+    {
+      "image_id": "e044a49eb4314025b64816631890eb63",
+      "vehicle_id": "1319",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "5f537f665b544cc98b003a3190bbd150",
+      "vehicle_id": "1319",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "d0c1a950eb4242a1bebe12914d96c58f",
+      "vehicle_id": "588",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "113fe1503aa244abbfda107ee1073cce",
+      "vehicle_id": "588",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5ade56869db54f2b86b4a3b8178baaac",
+      "vehicle_id": "588",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "3410d52ca86d4446807d72b4b3b4b839",
+      "vehicle_id": "588",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "fc9614226f044fc0bb6a0a376e6cb4e3",
+      "vehicle_id": "588",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "c56dcc66223240c0b73f34716f8a64e1",
+      "vehicle_id": "588",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "b0a3fd12ce454ce490af2e14e81f546a",
+      "vehicle_id": "664",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "7440652e3dd4496983607f5032403853",
+      "vehicle_id": "664",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "457d38ae2ebc4087817bd9968463d1ce",
+      "vehicle_id": "664",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "2181b70016594b72879adb409e82ce81",
+      "vehicle_id": "664",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "473f4ea09d174378b62309ba18fef083",
+      "vehicle_id": "664",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "cb9ecf32535441baaf4e00ca62f83cea",
+      "vehicle_id": "664",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "21f6d8074a3041078bcbedc281a7ea2c",
+      "vehicle_id": "1456",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "511d0f31c4384295841cfd11c94ef954",
+      "vehicle_id": "1456",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "ffde07b2c54949a6b6b35d59d5b1fa01",
+      "vehicle_id": "1456",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "973e1a297ce84dcc890d674dfd7d93e8",
+      "vehicle_id": "1456",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "744fafba3838400b9329f7107405bea4",
+      "vehicle_id": "1456",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "a5c461bb5f2848d28aabb04f18392cd3",
+      "vehicle_id": "1456",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "38a87ced888646a7b925bc27d82c739a",
+      "vehicle_id": "18",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "1ccdcd47cfb246179a1d1a9038b965fe",
+      "vehicle_id": "18",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "455884e0908541378086ca37a521e869",
+      "vehicle_id": "18",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "c4666ba503314f41b032b77e5cd2e53c",
+      "vehicle_id": "18",
+      "camera_id": "73"
+    },
+    {
+      "image_id": "2a85479737b1400bb08b093be55d8523",
+      "vehicle_id": "18",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "b495251997df4d349e949fd617ab66b7",
+      "vehicle_id": "18",
+      "camera_id": "5"
+    },
+    {
+      "image_id": "09d5f859e76541c28dbeb0df561db7b3",
+      "vehicle_id": "1123",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "2e0a7baaa678405fbd3fe75e007cad8d",
+      "vehicle_id": "1123",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "c88c36766c084fbca28232a4c9b88604",
+      "vehicle_id": "1123",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "ac759a2a0fa44fa8a483e17e3bbd8ab0",
+      "vehicle_id": "1123",
+      "camera_id": "69"
+    },
+    {
+      "image_id": "b0ed62b1e060407a8626082c4b12d3fd",
+      "vehicle_id": "1123",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "84459f71d1d1444e932254a9b08082ac",
+      "vehicle_id": "1123",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "84a0aa549452410484f0a079400c70a7",
+      "vehicle_id": "752",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "d856fd77e6ee49f6b4d78748aeed2515",
+      "vehicle_id": "752",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5283e4ec2d5544b187ce77cfbdb0fe33",
+      "vehicle_id": "752",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "fcc0d534cb4b46baa8ca6d731b511a32",
+      "vehicle_id": "752",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "d8c6d4777d7c4c6e91b945ce2ffab9cb",
+      "vehicle_id": "752",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "5356890c5a2947cf8466b70b6381c2fe",
+      "vehicle_id": "752",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "344f68d8398f4b3480498a9b2e605d7b",
+      "vehicle_id": "1164",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "48332884b1a64bb3a5237ae525320ce0",
+      "vehicle_id": "1164",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "f8a63bf46d17461eb376497e4b994a07",
+      "vehicle_id": "1164",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "f005dc7a36b84f158e02b2c753320c21",
+      "vehicle_id": "1164",
+      "camera_id": "91"
+    },
+    {
+      "image_id": "e03a5bbfb74a47d99c0c3b7160effb4a",
+      "vehicle_id": "1164",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "2e7bbabc527641ac975082bd7196041c",
+      "vehicle_id": "1164",
+      "camera_id": "81"
+    },
+    {
+      "image_id": "464bbc8f264f42a1a236daa942d74afc",
+      "vehicle_id": "69",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "a8a984b4a356492e8a2bccbb992269cd",
+      "vehicle_id": "69",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e75d93d10da74da290dd3644c7344d39",
+      "vehicle_id": "69",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "c2be9163285b456ea354b769d6cc234f",
+      "vehicle_id": "69",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "e82c5f5f9b6a4785b88e1b4b613c9e5c",
+      "vehicle_id": "69",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "969b0f68dda048aca50e5c0952fa45d3",
+      "vehicle_id": "69",
+      "camera_id": "43"
+    },
+    {
+      "image_id": "fa7ab7f62ca84dd38d417ba413a175fc",
+      "vehicle_id": "1422",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "fa1e68a72abf44849cd9ec5327888853",
+      "vehicle_id": "1422",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "91dbbc0a3f4344499fab2abd287d4617",
+      "vehicle_id": "1422",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "514a3668dc684f63b7d6817d2f1306b4",
+      "vehicle_id": "1422",
+      "camera_id": "82"
+    },
+    {
+      "image_id": "41eaba4999d34e4f82936440ce29c1e3",
+      "vehicle_id": "1422",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "22f560e70e46451bbe9b2457271168ef",
+      "vehicle_id": "1422",
+      "camera_id": "85"
+    },
+    {
+      "image_id": "882e22540c6c4251a6bb5be24727191a",
+      "vehicle_id": "1314",
+      "camera_id": "63"
+    },
+    {
+      "image_id": "373f310d63714b02b9fd6e31631aab31",
+      "vehicle_id": "1314",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "2e7d03b601984ed89a3775edcd4cc947",
+      "vehicle_id": "1314",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "b3df316cbdc240e5bf6d7f6b260ea7ad",
+      "vehicle_id": "1314",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "64814e639164477383ef8305dd42bdfc",
+      "vehicle_id": "1314",
+      "camera_id": "37"
+    },
+    {
+      "image_id": "e1cfa626066c41aea0e146d81e6732d4",
+      "vehicle_id": "1314",
+      "camera_id": "40"
+    },
+    {
+      "image_id": "66ddc1b5ce1549f59831279e04218924",
+      "vehicle_id": "1155",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "b4a2f796e5544551bef06ad196e87172",
+      "vehicle_id": "1155",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "93431c3f494f45e4ae107401cd3182a1",
+      "vehicle_id": "1155",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "b437ba41530a4b78b99c2a982bf6b8a2",
+      "vehicle_id": "1155",
+      "camera_id": "19"
+    },
+    {
+      "image_id": "2696eddc2c5640e89c14aca0fddca7b2",
+      "vehicle_id": "1155",
+      "camera_id": "6"
+    },
+    {
+      "image_id": "11e1bc04994b44da9f4109937c588aac",
+      "vehicle_id": "169",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "93f7588097634317a76f39c5f34ef2a7",
+      "vehicle_id": "169",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "b628dccfec6246179425bcdb04af6e48",
+      "vehicle_id": "169",
+      "camera_id": "33"
+    },
+    {
+      "image_id": "6f00c847b6944049b947a0987c4ff02b",
+      "vehicle_id": "169",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "82becd6a94574a1ca8c2427820fbc11b",
+      "vehicle_id": "169",
+      "camera_id": "39"
+    },
+    {
+      "image_id": "ae323732a2ec457d82c66a2be0fd04f4",
+      "vehicle_id": "1281",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "b883db0a148947fbaddeddcd6134278f",
+      "vehicle_id": "1281",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "e78d3346b54748959d1b949f5fb22575",
+      "vehicle_id": "1281",
+      "camera_id": "89"
+    },
+    {
+      "image_id": "dfef730d7e704c20a7991ac62ada4e44",
+      "vehicle_id": "1281",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "f76c4b472b8f48cf875afda938d334d8",
+      "vehicle_id": "1281",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "27ff72dc1b4746bfad6c719da1b9716a",
+      "vehicle_id": "1281",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "99ca18be71514f2f8c8f61cefb31acd2",
+      "vehicle_id": "112",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "0a07e9dbb2544f50a35f97d55835e1b0",
+      "vehicle_id": "112",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "41a228efcd27438584b746515520bf9f",
+      "vehicle_id": "112",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "fd6f74729da048a7999e84705c247c84",
+      "vehicle_id": "112",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "d2a3d9c07e1a48c8b578be5cb4c81170",
+      "vehicle_id": "112",
+      "camera_id": "51"
+    },
+    {
+      "image_id": "8dc8a74d08ca4a04b0f6c1933b73c385",
+      "vehicle_id": "1423",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "e496c6d3a27d49cfa02ad7a97711b9db",
+      "vehicle_id": "1423",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "020da7f277544ae190486bf3c672573b",
+      "vehicle_id": "1423",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "66317b5c5be9486c8e153e7d9dbfc593",
+      "vehicle_id": "1423",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "36c01c100ab84ae58220abe10595c344",
+      "vehicle_id": "1423",
+      "camera_id": "84"
+    },
+    {
+      "image_id": "32ab52157a4f4a2cb6138b7b5df42e60",
+      "vehicle_id": "1423",
+      "camera_id": "71"
+    },
+    {
+      "image_id": "2a8a771bee7441eea129f9c3c4e71b87",
+      "vehicle_id": "1252",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "08450f301c964ad789b2ae9173261657",
+      "vehicle_id": "1252",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "0b7085fcc6094419a841287d27b632be",
+      "vehicle_id": "1252",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "7cda3519bc0f4f09953a15b7e3bf7866",
+      "vehicle_id": "1252",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "762ecdb3f7d14c3db6e9f999b5e207bb",
+      "vehicle_id": "1252",
+      "camera_id": "24"
+    },
+    {
+      "image_id": "61a018501fe343c698c2bc52c9bc6e2b",
+      "vehicle_id": "1252",
+      "camera_id": "92"
+    },
+    {
+      "image_id": "1d393e143ffa46edbad8da86d6842af7",
+      "vehicle_id": "251",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "d60172172b174d01bf98796fac6fbafb",
+      "vehicle_id": "251",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "bc5093c6c5544552ab9f19d483e7d4aa",
+      "vehicle_id": "251",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "c735c2341ef046ea8f6a6f2cc25b4e4d",
+      "vehicle_id": "251",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "0a99a8763e2d4deb9b819dc2f991be26",
+      "vehicle_id": "251",
+      "camera_id": "90"
+    },
+    {
+      "image_id": "6a510e408be54fbb8e3eddb41acee418",
+      "vehicle_id": "251",
+      "camera_id": "59"
+    },
+    {
+      "image_id": "afd7987348a34ad4a3a7f97d45152fb9",
+      "vehicle_id": "1186",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "0316f35ddc264a54a3602f9d0584bd05",
+      "vehicle_id": "1186",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "9d3119adb21641028999061d6319d94f",
+      "vehicle_id": "1186",
+      "camera_id": "42"
+    },
+    {
+      "image_id": "1aeedb0230cc41d99085967677aea77d",
+      "vehicle_id": "1186",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "75daffd492b1442eaefa36dffd88c092",
+      "vehicle_id": "1186",
+      "camera_id": "36"
+    },
+    {
+      "image_id": "0abc195159704d58a0ab41c3b0b4ddab",
+      "vehicle_id": "1186",
+      "camera_id": "42"
+    }
+  ],
+  "official_protocol": {
+    "folds": 4,
+    "seed": 59,
+    "base_train_seed": 42,
+    "seed_offset": 17,
+    "open_set_ratio": 0.2,
+    "semantics": "Exact vehicle_reid_v5 make_official_val_folds: one query per eligible identity per fold, 20% query identities removed from gallery; organizer junk semantics applied by evaluate.py.",
+    "fold_fingerprints": [
+      {
+        "fold": 0,
+        "query_rows": 231,
+        "gallery_rows": 968,
+        "open_set_vehicle_ids": [
+          "1038",
+          "1040",
+          "1075",
+          "1123",
+          "1127",
+          "1281",
+          "1300",
+          "1316",
+          "1319",
+          "1331",
+          "1358",
+          "1405",
+          "142",
+          "1423",
+          "1440",
+          "1464",
+          "1475",
+          "1539",
+          "217",
+          "251",
+          "257",
+          "261",
+          "267",
+          "272",
+          "285",
+          "39",
+          "403",
+          "511",
+          "541",
+          "546",
+          "568",
+          "587",
+          "649",
+          "664",
+          "666",
+          "692",
+          "764",
+          "79",
+          "8",
+          "816",
+          "829",
+          "875",
+          "885",
+          "908",
+          "952",
+          "977"
+        ],
+        "query_image_ids_sha256": "847721cfd7c940ff24c4ef45367e4e3ff05ef44f8604569552af54dbd9cd2f31",
+        "gallery_image_ids_sha256": "f6fa853694da36a49962341d5d29d0441c43b6431993435627f556a8c5b87bd3"
+      },
+      {
+        "fold": 1,
+        "query_rows": 231,
+        "gallery_rows": 954,
+        "open_set_vehicle_ids": [
+          "1",
+          "107",
+          "1072",
+          "111",
+          "112",
+          "1121",
+          "1126",
+          "1134",
+          "1154",
+          "1190",
+          "1234",
+          "1422",
+          "1438",
+          "1440",
+          "1456",
+          "1520",
+          "187",
+          "210",
+          "217",
+          "235",
+          "251",
+          "257",
+          "285",
+          "328",
+          "348",
+          "358",
+          "39",
+          "546",
+          "574",
+          "582",
+          "638",
+          "659",
+          "671",
+          "69",
+          "7",
+          "706",
+          "710",
+          "788",
+          "8",
+          "896",
+          "9",
+          "912",
+          "929",
+          "94",
+          "957",
+          "996"
+        ],
+        "query_image_ids_sha256": "c4cc6f36e5ba3bb1ea9b2362ad8e55dee779ea67f53f7aab6c1681abebeb183e",
+        "gallery_image_ids_sha256": "7052033ab067103c91a39275e6f79a247d31c60edeede125377cef907bbd81a8"
+      },
+      {
+        "fold": 2,
+        "query_rows": 231,
+        "gallery_rows": 955,
+        "open_set_vehicle_ids": [
+          "1015",
+          "1043",
+          "1058",
+          "112",
+          "1163",
+          "1190",
+          "1198",
+          "1326",
+          "1358",
+          "1405",
+          "1440",
+          "1475",
+          "1481",
+          "1531",
+          "187",
+          "200",
+          "208",
+          "215",
+          "224",
+          "261",
+          "31",
+          "340",
+          "406",
+          "421",
+          "458",
+          "538",
+          "54",
+          "552",
+          "575",
+          "616",
+          "642",
+          "67",
+          "673",
+          "708",
+          "710",
+          "712",
+          "784",
+          "787",
+          "837",
+          "852",
+          "875",
+          "877",
+          "908",
+          "930",
+          "946",
+          "967"
+        ],
+        "query_image_ids_sha256": "6826511045a37f0bb003b2783cab1a057983be90862b98a974e1ff507e251c13",
+        "gallery_image_ids_sha256": "dda477ff5b5fc246c714b7a6c5961d0d857b4f09a11c02fb42f747031d17b621"
+      },
+      {
+        "fold": 3,
+        "query_rows": 231,
+        "gallery_rows": 966,
+        "open_set_vehicle_ids": [
+          "1",
+          "1040",
+          "1043",
+          "1051",
+          "1163",
+          "1166",
+          "1248",
+          "1252",
+          "1319",
+          "1363",
+          "1371",
+          "1440",
+          "1464",
+          "1520",
+          "1522",
+          "154",
+          "169",
+          "187",
+          "200",
+          "201",
+          "207",
+          "221",
+          "31",
+          "375",
+          "39",
+          "511",
+          "515",
+          "526",
+          "546",
+          "587",
+          "588",
+          "599",
+          "616",
+          "638",
+          "659",
+          "67",
+          "708",
+          "771",
+          "802",
+          "859",
+          "888",
+          "896",
+          "945",
+          "95",
+          "957",
+          "995"
+        ],
+        "query_image_ids_sha256": "6faabdc1ab700b1edf642f22d5a7eca63880e5094fbf5d50bc195215f3277a0f",
+        "gallery_image_ids_sha256": "522b1fb24524a72cd7c8e379bc7d9231b63a5319c58939fafcf4150536ec0e82"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "base_alpha": 0.25,
+  "reranker_beta": 0.1,
+  "kreciprocal_lambda": 0.0,
+  "same_camera_filter": false,
+  "rerank_topk": 100,
+  "kreciprocal_k": 20,
+  "selection": "mean_official_CV_mAP@10_then_Rank1_Rank5_full_mAP_mINP"
+}

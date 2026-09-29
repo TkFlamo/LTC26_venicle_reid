@@ -1,0 +1,151 @@
+seed: 42
+device: 0
+precision: bf16
+resume: true
+paths:
+  raw_csv: raw/train.csv
+  raw_images: raw/images
+  hackathon: data/processed/hackathon
+  cv: data/processed/hackathon_single_v5shared
+  carparts: data/external/carparts-seg
+  veri: data/external/VeRi
+  external_processed: data/processed/external
+  part_bootstrap: data/processed/part_bootstrap
+  runs: runs/full_single_v094_v5exact_base_veri
+  deploy: deploy/models_v094_v5exact_base_veri
+cv:
+  mode: single_fixed_development_split
+  inner_val_fraction: 0.2
+  reranker_fit_fraction_of_val: 0.5
+  min_eval_cameras: 2
+  open_set_fraction: 0.2
+  max_queries_per_id: 2
+  compute_brightness: true
+  shared_validation_spec: configs/shared_validation_v5.json
+  shared_validation_note: 'Exact vehicle_reid_v5_official validation pool: 1430 rows
+    / 231 vehicle IDs. It is reporting-only. Architecture/loss/epoch/reranker choices
+    use one fixed split inside the remaining development pool.'
+backbones:
+- convnext_base
+- vit_base
+resolutions:
+- - 384
+  - 576
+veri_ablation: false
+veri_pretrain:
+  enabled: false
+  prepare_if_needed: false
+  train_manifest: data/processed/external/veri_v5_train.csv
+  val_manifest: data/processed/external/veri_v5_val.csv
+  manifest_audit: data/processed/external/veri_v5_transfer_manifest.json
+  epochs: 48
+  profile: base
+  plate_mask_prob: 0.0
+  run_direct_target_control: true
+  selection: target_inner_validation
+  note: 'Disabled by default: the supplied canonical deployment selected dinov3_direct
+    rather than VeRi initialization. Use configs/full_cv_pipeline_with_veri.yaml to
+    reproduce the optional VeRi ablation.'
+baseline:
+  engine: vehicle_reid_v5_official_exact
+  vendor_vehicle_reid_v5: third_party/vehicle_reid_v5_official/vehicle_reid_v5.py
+  vendor_train_best_v5: third_party/vehicle_reid_v5_official/train_best_v5.py
+  profile: base
+  epochs: 48
+  warmup_epochs: 2
+  freeze_backbone_epochs: 1
+  patience: 12
+  stage2_epoch: 14
+  lr_milestones:
+  - 32
+  - 40
+  sampler: camera
+  p: 16
+  k: 4
+  lr_backbone: 3.0e-05
+  lr_head: 0.0003
+  same_camera_neg_weight: 0.25
+  ce_weight: 1.0
+  triplet_weight: 1.0
+  circle_weight: 0.5
+  stage2_ce_weight: 0.25
+  stage2_triplet_weight: 1.0
+  stage2_circle_weight: 0.2
+  train_microbatch:
+    convnext_base: 4
+    vit_base: 2
+    default: 4
+  note: Optimization/loss/sampler/augmentation/scheduler/checkpoint-selection logic
+    is executed by the vendored vehicle_reid_v5_official BASE profile. The experiment
+    overrides are the fixed pre-split development set, DINOv3 Base architecture, 384x576
+    input, and activation-memory-only microbatch.
+parts:
+  template: configs/part_head_carparts.yaml
+  epochs: 20
+  multiscale_spatial: true
+  spatial_fusion_dim: 256
+part_aware:
+  template: configs/reid_part_aware.yaml
+  epochs: 18
+  multiscale_spatial: true
+  spatial_fusion_dim: 256
+  cross_camera_triplet: true
+  cross_camera_positive_weight: 0.8
+  same_camera_positive_weight: 0.2
+  memory_bank_size: 8192
+  memory_triplet_weight: 0.1
+detail:
+  template: configs/reid_detail_tune.yaml
+  epochs: 10
+  multiscale_spatial: true
+  spatial_fusion_dim: 256
+  cross_camera_triplet: true
+  cross_camera_positive_weight: 0.85
+  same_camera_positive_weight: 0.15
+  global_supcon: 0.1
+  memory_bank_size: 16384
+  memory_triplet_weight: 0.18
+  ema_part_presence: 0.15
+  ema_teacher_decay: 0.995
+  ema_presence_topk: 4
+  return_weak_view: true
+  online_hard_mining_every: 2
+  online_hard_topk: 40
+reranker:
+  mode: listwise
+  candidates_per_query: 24
+  groups_per_id: 4
+  knn_k: 20
+  epochs: 24
+  rerank_topk: 100
+  alpha_grid:
+  - 0.0
+  - 0.03
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.25
+  beta_grid:
+  - 0.0
+  - 0.05
+  - 0.1
+  - 0.2
+  - 0.35
+  kreciprocal_lambda_grid:
+  - 0.0
+  - 0.05
+  - 0.1
+  - 0.2
+  kreciprocal_k: 20
+  same_camera_filter_grid:
+  - false
+  same_camera_filter_note: Disabled because camera_id is not available at competition
+    test inference.
+ensemble:
+  enabled: false
+  note: Disabled in v0.9.4 compute-efficient mode. ConvNeXt-Base and ViT-Base are
+    compared once on the same fixed development split; only the better global backbone
+    receives spatial/detail training.
+features:
+  batch: 24
+  workers: 8

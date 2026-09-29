@@ -1,0 +1,153 @@
+{
+  "schema": "vehicle-reid-v094-final-pt-package-audit-v1",
+  "production_ensemble": {
+    "base_full": 0.65,
+    "external_convnext_full": 0.35
+  },
+  "fusion": "per_query_zscore",
+  "runtime": "PyTorch CUDA",
+  "recommended_precision": "fp16",
+  "weight_files": [
+    {
+      "path": "deploy/models_current/members/base_full/reid.pt",
+      "size_bytes": 398341273,
+      "sha256": "de4f580b96db20c6c12d1142d2e40c85e98f59b349f473f1d7849410a839d176"
+    },
+    {
+      "path": "deploy/models_current/members/base_full/reranker.pt",
+      "size_bytes": 54051,
+      "sha256": "44fa6857c87674b47e0b8ced4c97b417718b71f218e5f20a19c414126f8bea76"
+    },
+    {
+      "path": "deploy/models_current/members/external_convnext_full/reid.pt",
+      "size_bytes": 252659413,
+      "sha256": "dc444c5773430150679284f76ada6bc4a8159ee78a513efe0ae773d82d19756c"
+    },
+    {
+      "path": "deploy/models_current/members/external_convnext_full/reranker.pt",
+      "size_bytes": 54051,
+      "sha256": "608b2218d65ca3566b99605c7769a018ac8f2f4afba84afe6b64ea3e35ad7c73"
+    },
+    {
+      "path": "training/checkpoints/external_convnext/convnext_best_map.pt",
+      "size_bytes": 199524243,
+      "sha256": "1a371ded01aec27573a518409f1c4381e23c012523cbbe5c5494514b1db0515a"
+    }
+  ],
+  "total_weight_bytes": 850633031,
+  "total_weight_gib": 0.7922137444838881,
+  "organizer_weight_limit_bytes": 2147483648,
+  "under_2gb_limit": true,
+  "onnx_files": [],
+  "tensorrt_files": [],
+  "exact_dependency_versions": true,
+  "external_convnext_provenance": {
+    "origin": "team_trained",
+    "url": null,
+    "version": null,
+    "sha256": null,
+    "note": "If this checkpoint was trained by another member of the same team, use team_trained. If it is a third-party public checkpoint, public URL/version/SHA256 are required by organizer Q&A."
+  },
+  "training_reproducibility": {
+    "schema": "vehicle-reid-v094-training-reproducibility-v1",
+    "production_ensemble": {
+      "base_full": 0.65,
+      "external_convnext_full": 0.35
+    },
+    "base_full": {
+      "level": "from_data_and_public_pretraining",
+      "training_code_included": true,
+      "entrypoint": "scripts/30_full_cv_pipeline.py",
+      "config": "configs/full_cv_pipeline.yaml",
+      "vendored_baseline": "third_party/vehicle_reid_v5_official"
+    },
+    "external_convnext_full": {
+      "level": "from_data_and_public_pretraining",
+      "raw_checkpoint_training_source_included": true,
+      "raw_checkpoint_training_entrypoint": "scripts/67_train_external_convnext_best_map_v094.py",
+      "raw_checkpoint_training_command": "GPU=0 python scripts/67_train_external_convnext_best_map_v094.py --data /path/to/hackathon_dataset",
+      "raw_checkpoint_output": "weights/external/convnext_best_map.pt",
+      "pretrained_seed_packaged": true,
+      "packaged_seed": {
+        "source": "/home/jovyan/work/vehicle_fingerprint_reid_v094_base_clean/weights/external/convnext_best_map.pt",
+        "path": "training/checkpoints/external_convnext/convnext_best_map.pt",
+        "size_bytes": 199524243,
+        "sha256": "1a371ded01aec27573a518409f1c4381e23c012523cbbe5c5494514b1db0515a"
+      },
+      "downstream_training_code_included": true,
+      "downstream_entrypoint": "scripts/66_reproduce_external_convnext_full_v094.py",
+      "downstream_from_packaged_seed_command": "GPU=0 python scripts/66_reproduce_external_convnext_full_v094.py --data-project . --convnext-external training/checkpoints/external_convnext/convnext_best_map.pt --config configs/full_cv_pipeline.yaml --run-root runs/reproduce_external_convnext_full_v094 --deploy deploy/models_v094_external_global",
+      "origin": "team_trained",
+      "provenance": {
+        "origin": "team_trained",
+        "url": null,
+        "version": null,
+        "sha256": null,
+        "note": "If this checkpoint was trained by another member of the same team, use team_trained. If it is a third-party public checkpoint, public URL/version/SHA256 are required by organizer Q&A."
+      },
+      "external_training_source_audit": {
+        "source": "vendored_team_developer_training_source",
+        "path": "third_party/external_convnext_v5_training",
+        "files": [
+          {
+            "path": "third_party/external_convnext_v5_training/vehicle_reid_v5.py",
+            "size_bytes": 87481,
+            "sha256": "25d69e2a60dba45db93a8b4fb8544361ea7afca574b3ada3c36704f810a948ac"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/train_best_v5.py",
+            "size_bytes": 18601,
+            "sha256": "e50f33befae4729593176dcb0b7c47111094e5c0fd0665aa6befb96a7a59fe6a"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/run_next_experiments_v7.py",
+            "size_bytes": 2341,
+            "sha256": "f1fb5426cd0d795eb2030f75f596cb42b8e960803d4e9808f85d20eecae3e257"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/requirements_v5.txt",
+            "size_bytes": 285,
+            "sha256": "05b391dadfbe9804b28f076f28d9541c47a1d85387002475a6494a2478c812c9"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/README_INTEGRATION.md",
+            "size_bytes": 2749,
+            "sha256": "27993dc97cce8f4921baa283b9a71fbcedcbbcf49140cd3b15d54162fbb2ffc2"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/SOURCE_SHA256.txt",
+            "size_bytes": 822,
+            "sha256": "06892cc88bae71b1ff690361bcdd5c9bd95ab65e9b6891c9bc93c332946a4fc7"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/reference/E3e_camera_strongerase_history.csv",
+            "size_bytes": 22271,
+            "sha256": "4b5ef2811afc7bcba2f3406027da24a08568c35480121cb5a368ab8699ac2eff"
+          },
+          {
+            "path": "third_party/external_convnext_v5_training/reference/E3e_camera_strongerase_split.json",
+            "size_bytes": 2972,
+            "sha256": "29e95ab4639d8515920c9aa348d996919605fa5751672f8a57045722853c0227"
+          }
+        ],
+        "file_count": 8,
+        "total_bytes": 137522,
+        "raw_checkpoint_entrypoint": "scripts/67_train_external_convnext_best_map_v094.py",
+        "winning_profile": "small_camera_sampler_strongerase",
+        "reference_run": "E3e_camera_strongerase",
+        "reference_best_epoch": 25,
+        "reference_best_official_mAP@10": 0.8214526158811873
+      }
+    },
+    "full_training_reproducible_from_raw_data": true,
+    "note": "The team developer training source that creates convnext_best_map.pt is vendored under third_party/external_convnext_v5_training. Developer inference/export code is intentionally not vendored; the production v0.9.4 inference remains canonical."
+  },
+  "training_code_packaged": true,
+  "external_convnext_seed_packaged": true,
+  "external_convnext_seed": {
+    "source": "/home/jovyan/work/vehicle_fingerprint_reid_v094_base_clean/weights/external/convnext_best_map.pt",
+    "path": "training/checkpoints/external_convnext/convnext_best_map.pt",
+    "size_bytes": 199524243,
+    "sha256": "1a371ded01aec27573a518409f1c4381e23c012523cbbe5c5494514b1db0515a"
+  }
+}

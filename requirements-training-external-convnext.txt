@@ -1,0 +1,13 @@
+# Canonical reproduction environment for the vendored developer trainer.
+# The developer archive itself specified ranges (see third_party/external_convnext_v5_training/requirements_v5.txt),
+# so these exact pins are a project-level reproducibility lock chosen within those ranges, not an original pip freeze.
+numpy==2.0.2
+pandas==2.2.3
+Pillow==11.0.0
+matplotlib==3.9.2
+tqdm==4.66.5
+torch==2.4.1
+torchvision==0.19.1
+timm==1.0.20
+openpyxl==3.1.5
+opencv-python-headless==4.10.0.84

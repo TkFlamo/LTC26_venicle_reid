@@ -1,0 +1,101 @@
+seed: 43
+device: auto
+precision: bf16
+run_dir: runs/reid/detail_tune_v2
+train_manifest: data/processed/hackathon/train.csv
+val_manifest: data/processed/hackathon/val.csv
+warmstart: runs/reid/part_aware_v1/best.pt
+teacher_checkpoint: runs/parts/dino_carparts/best.pt
+hard_negative_map: runs/reid/part_aware_v1/hard_negatives.json
+epochs: 10
+eval_every: 1
+grad_accum: 1
+grad_clip: 2.0
+data:
+  image_size:
+  - 256
+  - 384
+  part_target_size:
+  - 64
+  - 96
+  augmentation_profile: baseline_v4
+  use_source_bbox: true
+  bbox_pad: 0.03
+  p: 16
+  k: 4
+  workers: 8
+  eval_batch_size: 96
+  batches_per_epoch: 500
+model:
+  backbone:
+    profile: convnext_small
+    model_name: convnext_small.dinov3_lvd1689m
+    pretrained: false
+    checkpoint_path: null
+    dense_stage: -2
+  global_head_mode: baseline_v4
+  enable_parts: true
+  embed_dim: 512
+  part_dim: 160
+  local_dim: 160
+  local_grid:
+  - 4
+  - 6
+  fusion_layers: 2
+  fusion_heads: 8
+  arc_scale: 30.0
+  arc_margin: 0.35
+  part_head_dim: 256
+  part_head_blocks: 3
+  part_attention_heads: 8
+  part_prior_strength: 3.2
+  part_visibility_threshold: 0.42
+  part_visibility_topk: 3
+  detach_semantic_prior: true
+  part_dropout: 0.05
+  fusion_max_residual: 0.25
+  fusion_initial_gate: 0.01
+optimizer:
+  backbone_lr: 1.0e-06
+  head_lr: 4.0e-05
+  part_head_lr: 3.0e-05
+  weight_decay: 0.02
+  warmup_fraction: 0.03
+  freeze_backbone: false
+  unfreeze_backbone_last_units: 2
+  freeze_global_head: true
+  freeze_part_head: true
+loss:
+  arcface: 0.0
+  global_triplet: 0.35
+  fused_triplet: 1.0
+  global_supcon: 0.0
+  local_triplet: 0.3
+  part_consistency: 0.03
+  part_supcon: 0.1
+  part_triplet: 0.3
+  triplet_margin: 0.18
+  local_triplet_margin: 0.16
+  part_triplet_margin: 0.12
+  part_temperature: 0.075
+  part_metric_min_score: 0.45
+  global_distill: 2.0
+  part_prob_distill: 0.4
+evaluation:
+  same_camera_policy: same_identity
+  blend_alpha_grid:
+  - 0.0
+  - 0.03
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.25
+  - 0.4
+  - 0.7
+  - 1.0
+  official:
+    evaluator: official/evaluate.py
+    gt: data/processed/hackathon/official_val/ground_truth.csv
+    query_manifest: data/processed/hackathon/official_val/query.csv
+    gallery_manifest: data/processed/hackathon/official_val/gallery.csv
+    top_k: 10

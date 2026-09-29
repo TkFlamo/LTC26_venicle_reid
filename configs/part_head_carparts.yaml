@@ -1,0 +1,40 @@
+seed: 42
+device: auto
+precision: bf16
+run_dir: runs/parts/dino_carparts
+warmstart: runs/reid/baseline_selected/best.pt
+part_dataset: data/processed/part_bootstrap
+epochs: 20
+grad_clip: 1.0
+data:
+  image_size:
+  - 256
+  - 384
+  part_target_size:
+  - 64
+  - 96
+  batch_size: 48
+  eval_batch_size: 64
+  workers: 8
+model_overrides:
+  enable_parts: true
+  part_head_dim: 256
+  part_head_blocks: 3
+  part_attention_heads: 8
+  part_prior_strength: 3.0
+  part_visibility_threshold: 0.42
+  part_visibility_topk: 3
+  detach_semantic_prior: true
+  part_dropout: 0.06
+  fusion_max_residual: 0.25
+  fusion_initial_gate: 0.01
+  part_dim: 160
+  local_dim: 160
+optimizer:
+  lr: 0.0003
+  min_lr: 2.0e-05
+  weight_decay: 0.02
+loss:
+  focal_gamma: 1.5
+  dice_weight: 0.55
+  query_alignment: 0.4

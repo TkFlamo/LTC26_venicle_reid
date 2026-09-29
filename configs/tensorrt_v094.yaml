@@ -1,0 +1,21 @@
+# TensorRT deployment/benchmark profile for vehicle_fingerprint_reid_v0.9.4 Base.
+image_size: [384, 576]
+precision: fp16
+opset: 18
+workspace_mib: 4096
+batch_profile:
+  min: 1
+  opt: 8
+  max: 32
+benchmark:
+  batches: [1, 8, 16, 32]
+  warmup: 50
+  iterations: 200
+  actual_queries: 100
+  gallery_batch: 32
+  topk: 10
+# Cross-fitted global ensemble used weights 0.38/0.45/0.45/0.45/0.45 for ConvNeXt.
+# 0.45 is the stable/median deployment weight; override on the CLI if needed.
+ensemble:
+  convnext_weight: 0.45
+  benchmark_parallel_cuda_streams: true

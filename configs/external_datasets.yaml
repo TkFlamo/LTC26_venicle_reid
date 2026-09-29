@@ -1,0 +1,12 @@
+datasets:
+  carparts_seg:
+    enabled: true
+    role: semantic_part_bootstrap
+    access: automatic
+    url: https://github.com/ultralytics/assets/releases/download/v0.0.0/carparts-seg.zip
+    expected_dir: carparts-seg
+  veri776:
+    enabled: true
+    role: identity_pretrain_before_fixed_target_finetune
+    access: manual_kaggle
+    expected_dir: VeRi

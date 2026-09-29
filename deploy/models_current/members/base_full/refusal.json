@@ -1,0 +1,38 @@
+{
+  "coef": [
+    2.8958165645599365,
+    0.3688996732234955,
+    5.633274555206299,
+    0.7760485410690308
+  ],
+  "intercept": -6.51597785949707,
+  "threshold": 0.465,
+  "features": [
+    "top1",
+    "margin12",
+    "global_top1",
+    "top1_minus_top5mean"
+  ],
+  "calibration_metrics": {
+    "TP": 152,
+    "FP": 3,
+    "FN": 13,
+    "TN": 50,
+    "Precision": 0.9806451612903225,
+    "Recall": 0.9212121212121213,
+    "F1": 0.9500000000000001,
+    "TNR": 0.9615384615384616,
+    "PR-AUC": 0.9987958624747119
+  },
+  "retrieval_recipe": {
+    "base_alpha": 0.25,
+    "reranker_beta": 0.1,
+    "kreciprocal_lambda": 0.0,
+    "same_camera_filter": false,
+    "rerank_topk": 100,
+    "kreciprocal_k": 20,
+    "selection": "mean_official_CV_mAP@10_then_Rank1_Rank5_full_mAP_mINP"
+  },
+  "selection": "pooled_OOF_F1_then_TNR_then_PR-AUC",
+  "seed": 42
+}
