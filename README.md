@@ -2,6 +2,8 @@
 
 Используется одна модель Vit_b. Скачать веса reid.pt https://disk.yandex.ru/d/n5t5Z6g53vs3Xw и расположить в папке ./deploy/models_current/members/base_full. 
 
+Результаты инференса на тестовой выборке лежат по пути outputs/test_hackaton/
+
 
 ## 1. Установка окружения
 
